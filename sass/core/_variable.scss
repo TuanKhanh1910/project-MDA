@@ -1,0 +1,20 @@
+:root {
+  // --font-pri: 'Roboto', serif;
+  --size-hd: 10rem;
+  font-family: "SVN-Gilroy";
+  --size-hd-top: 6.4rem;
+  --size-hd-bottom: 5.6rem;
+  --size-hd-left: 6.4rem;
+}
+
+// dit me m nho chua
+$color-pri: rgba(25, 118, 210, 1);
+$color-second: rgba(27, 28, 36, 1);
+$color-text: rgba(64, 64, 64, 1);
+$color-gray: rgba(142, 142, 142, 1);
+
+@mixin max($value) {
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}

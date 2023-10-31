@@ -1,0 +1,91 @@
+.tech {
+  padding: 7.2rem 0;
+  background: rgba(0, 84, 198, 1);
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(0, 84, 198, 1),
+    rgba(0, 131, 222, 1)
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 84, 198, 1),
+    rgba(0, 131, 222, 1)
+  );
+  position: relative;
+  .tech-header {
+    align-items: center;
+    margin-bottom: 6.4rem;
+
+    .header-left {
+      padding: 0 calc(var(--col-gap) / 2);
+      .tech-title {
+        font-weight: 700;
+        color: rgba(255, 255, 255, 1);
+        font-size: 4rem;
+      }
+    }
+    .header-right {
+      padding: 0 calc(var(--col-gap) / 0.5);
+      .tech-sub-title {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+  .tech-bottom {
+    position: relative;
+    z-index: 2;
+    .tech-content {
+      --col-gap: 10rem;
+      .col-tech {
+        width: calc((12 / 5) / 12 * 100%);
+      }
+      .tech-item {
+        padding: 0 calc(var(--col-gap) / 2);
+        .item-img {
+          background-color: rgba(255, 255, 255, 0.8);
+          border-radius: 0.8rem;
+          margin-bottom: 1.6rem;
+
+          .BI {
+            padding: 2.5rem 1.756rem 2.5rem 1.8rem;
+          }
+          .sql {
+            padding: 2rem 4rem;
+          }
+          .altery {
+            padding: 4.4rem 2.7rem 4.4rem 2.7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .qlik {
+            padding: 4.4rem 2.577rem 4.4rem 2.5rem;
+          }
+          .tableau {
+            padding: 2.3rem 1.35rem 2.2rem 1.3rem;
+          }
+        }
+        .item-text {
+          text-align: center;
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+  .tech-bg-left {
+    position: absolute;
+    bottom: -1%;
+    left: 0;
+    z-index: 1;
+  }
+  .tech-bg-right {
+    position: absolute;
+    bottom: -1%;
+    right: 0;
+    z-index: 1;
+  }
+}

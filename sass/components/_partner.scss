@@ -1,0 +1,180 @@
+.partner {
+  padding: 7.2rem 0;
+  background-color: rgba(248, 249, 250, 1);
+  .container {
+    max-width: 117.8rem;
+    .partner__content {
+      --col-gap: 5.6rem;
+      --row-gap: 0.8rem;
+      .partner__item {
+        padding: 0 calc(var(--col-gap) / 1);
+        &:last-of-type {
+          margin-top: 2rem;
+        }
+        .card-header {
+          .partner-title {
+            font-size: 4rem;
+            font-weight: 700;
+            color: $color-pri;
+          }
+        }
+        .card-body {
+          margin: 2.4rem 0;
+          .partner__sub__title1 {
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 1.6rem;
+            margin-bottom: 1.6rem;
+            .sub__title1 {
+              padding: 2.4rem 1.9rem 0;
+              font-size: 1.6rem;
+              color: $color-text;
+              font-weight: 400;
+              .partner__text__bold {
+                color: $color-pri;
+                font-weight: 700;
+              }
+            }
+          }
+          .partner__sub__title2 {
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 1.6rem;
+            .sub__title2 {
+              padding: 3.6rem 2rem;
+              font-size: 1.6rem;
+              font-weight: 400;
+              color: $color-text;
+            }
+          }
+        }
+        .card-bottom {
+          .btn-partner {
+            background-color: white;
+            border: 1px solid $color-pri;
+            border-radius: 10rem;
+            overflow: hidden;
+            position: relative;
+            &::after {
+              position: absolute;
+              content: "";
+              width: 0;
+              height: 100%;
+              top: 0;
+              right: 0;
+              background: rgba(0, 84, 198, 1);
+              background: -webkit-linear-gradient(
+                to left,
+                rgba(0, 84, 198, 1),
+                rgba(0, 131, 222, 1)
+              );
+              background: linear-gradient(
+                to left,
+                rgba(0, 84, 198, 1),
+                rgba(0, 131, 222, 1)
+              );
+              transition: all 0.5s;
+              z-index: 1;
+            }
+            &:hover {
+              border: 1px solid transparent;
+              &::after {
+                width: 100%;
+                left: 0%;
+              }
+              .btn-text {
+                color: white;
+              }
+            }
+            .btn-text {
+              padding: 1.2rem 2.4rem;
+              color: $color-pri;
+              position: relative;
+              z-index: 2;
+            }
+          }
+        }
+        .partner__top {
+          background: rgba(0, 84, 198, 1);
+          background: -webkit-linear-gradient(
+            to left,
+            rgba(0, 84, 198, 1),
+            rgba(0, 131, 222, 1)
+          );
+          background: linear-gradient(
+            to left,
+            rgba(0, 84, 198, 1),
+            rgba(0, 131, 222, 1)
+          );
+          border-radius: 2.4rem 2.4rem 0 0;
+          height: 10%;
+          width: 100%;
+          position: relative;
+          .top-circle1,
+          .top-circle2,
+          .top-circle3 {
+            width: 1.2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            position: absolute;
+
+            .box-iner {
+              padding-top: 100%;
+            }
+          }
+          .top-circle1 {
+            top: 35%;
+            left: 3%;
+          }
+          .top-circle2 {
+            left: 6%;
+            top: 35%;
+          }
+          .top-circle3 {
+            top: 35%;
+            left: 9%;
+          }
+        }
+        .img {
+          position: relative;
+          .partner__img {
+            border-radius: 0 0 2.4rem 2.4rem;
+          }
+          .sub__title {
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 1.6rem;
+            width: 42%;
+            position: absolute;
+            top: 17%;
+            right: -7%;
+            &::after {
+              content: "";
+              border-top: 9px solid rgba(255, 255, 255, 1);
+              border-left: 9px solid transparent;
+              border-right: 9px solid transparent;
+              position: absolute;
+              top: 100%;
+              left: 16%;
+            }
+            .sub-title-content {
+              padding: 1.2rem 1.9rem 1.2rem 2rem;
+              color: $color-gray;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .sub-icon {
+                margin-bottom: 0.9rem;
+                .fa-star {
+                  color: rgba(255, 193, 7, 1);
+                }
+              }
+              .sub-text {
+                font-size: 1.6rem;
+                font-weight: 400;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

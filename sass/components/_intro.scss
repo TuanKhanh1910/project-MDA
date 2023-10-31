@@ -1,0 +1,171 @@
+.intro {
+  padding: 10rem 0;
+  .container {
+    max-width: 117.8rem;
+    .intro__content {
+      --col-gap: 5.7rem;
+      --row-gap: 0.8rem;
+      .intro__item {
+        padding: 0 calc(var(--col-gap) / 2);
+        .card__header__left {
+          .intro__title {
+            font-size: 4rem;
+            font-weight: 700;
+            color: $color-pri;
+          }
+        }
+        .card__body__left {
+          .sub__title {
+            margin: 1.2rem 0 2.4rem;
+            font-size: 1.6rem;
+            color: $color-text;
+            font-weight: 400;
+            .text-bold {
+              color: $color-pri;
+              font-weight: 700;
+            }
+          }
+        }
+        .card__bottom__left {
+          .img__left {
+            border-radius: 2.4rem;
+          }
+        }
+        .card__header__right {
+          .img__right {
+            border-radius: 2.4rem;
+          }
+        }
+        .card__body__right {
+          margin: 2.4rem 0;
+          .sub__title {
+            font-size: 1.6rem;
+            font-weight: 700;
+          }
+          .sub__detail {
+            margin-top: 1.2rem;
+            .detail__item {
+              display: flex;
+              align-items: center;
+              gap: 0.8rem;
+              &:not(&:last-of-type) {
+                margin-bottom: 1.2rem;
+              }
+              .item-icon {
+                width: 1.6rem;
+                height: 1.6rem;
+                background-color: $color-pri;
+                color: white;
+                border-radius: 50%;
+                .fa-check {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 0.2rem;
+                  font-size: 1.2rem;
+                }
+              }
+              .item-text {
+                font-size: 1.6rem;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+        .card__bottom__right {
+          display: flex;
+          gap: 1.6rem;
+          align-items: center;
+          .intro-signUp {
+            border: 1px solid transparent;
+            background: rgba(0, 84, 198, 1);
+            background: -webkit-linear-gradient(
+              to left,
+              rgba(0, 84, 198, 1),
+              rgba(0, 131, 222, 1)
+            );
+            background: linear-gradient(
+              to left,
+              rgba(0, 84, 198, 1),
+              rgba(0, 131, 222, 1)
+            );
+            border-radius: 10rem;
+            position: relative;
+            overflow: hidden;
+            &:hover {
+              border: 1px solid $color-pri;
+              &::after {
+                width: 100%;
+                left: 0%;
+              }
+              .btn-sigUp {
+                color: $color-pri;
+              }
+            }
+            &::after {
+              position: absolute;
+              content: "";
+              width: 0;
+              height: 100%;
+              top: 0;
+              right: 0;
+              background: white;
+              transition: all 0.5s;
+              z-index: 1;
+            }
+            .btn-sigUp {
+              padding: 1.2rem 2.4rem;
+              color: white;
+              position: relative;
+              z-index: 2;
+            }
+          }
+          .intro-plus {
+            background-color: white;
+            border: 1px solid $color-pri;
+            border-radius: 10rem;
+            overflow: hidden;
+            position: relative;
+            &::after {
+              position: absolute;
+              content: "";
+              width: 0;
+              height: 100%;
+              top: 0;
+              right: 0;
+              background: rgba(0, 84, 198, 1);
+              background: -webkit-linear-gradient(
+                to left,
+                rgba(0, 84, 198, 1),
+                rgba(0, 131, 222, 1)
+              );
+              background: linear-gradient(
+                to left,
+                rgba(0, 84, 198, 1),
+                rgba(0, 131, 222, 1)
+              );
+              transition: all 0.5s;
+              z-index: 1;
+            }
+            &:hover {
+              border: 1px solid transparent;
+              &::after {
+                width: 100%;
+                left: 0%;
+              }
+              .btnPlus {
+                color: white;
+              }
+            }
+            .btnPlus {
+              padding: 1.2rem 2.4rem;
+              color: $color-pri;
+              position: relative;
+              z-index: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

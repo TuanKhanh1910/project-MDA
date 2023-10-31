@@ -1,0 +1,221 @@
+.footer {
+  background-color: rgba(13, 71, 161, 1);
+
+  .container {
+    max-width: 175.4rem;
+    .footer__content {
+      padding: 8rem 6.4rem 7.4rem;
+      display: flex;
+      --col-gap: 12.6rem;
+      --row-gap: 0.8rem;
+      .footer__item {
+        padding: 0 calc(var(--col-gap) / 5);
+        .footer__item__content {
+          display: flex;
+          flex-direction: column;
+        }
+        &:first-of-type {
+          .footer__item__content {
+            .footer__title {
+              padding: 0 (calc(var(--col-gap) - 10) / 2);
+              margin: 3.2rem 0;
+              .footer__text {
+                font-size: 1.4rem;
+                color: rgba(255, 255, 255, 1);
+                .footer__text__bold {
+                  font-weight: 700;
+                }
+              }
+            }
+            .footer__partner {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              font-size: 1.4rem;
+              .partner__micro {
+                display: flex;
+                align-items: center;
+                .micro__text {
+                  color: white;
+                  .text__bold {
+                    font-weight: 700;
+                    font-style: italic;
+                  }
+                }
+              }
+              .partner__lark {
+                background-color: white;
+                border-radius: 0.8rem;
+                .lark__content {
+                  display: flex;
+                  align-items: center;
+                  padding: 0.5rem;
+
+                  .lark__logo {
+                    display: flex;
+                    margin-right: 1rem;
+                    position: relative;
+                    &::before {
+                      content: "";
+                      position: absolute;
+                      right: -13%;
+                      top: 0;
+                      height: 2rem;
+                      width: 0.1rem;
+                      background-color: #391613;
+                    }
+                    .lark__logo__text {
+                      font-weight: 700;
+                    }
+                  }
+                  .lark__title {
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          .footer__item__content {
+            .footer__infor {
+              .infor__header {
+                .infor__header__text {
+                  font-size: 1.6rem;
+                  color: rgba(254, 192, 32, 1);
+                  font-weight: 600;
+                }
+              }
+              .main-infor {
+                margin: 2.4rem 0 3.2rem;
+                .infor-list {
+                  margin-bottom: 1.5rem;
+                  &:hover {
+                    .infor-link {
+                      color: rgba(254, 192, 32, 1);
+                    }
+                  }
+                  .infor-link {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    color: white;
+                    transition: all 0.5s;
+                  }
+                }
+              }
+            }
+            .footer__contact {
+              .contact__header {
+                .contact__header__text {
+                  font-size: 1.6rem;
+                  color: rgba(254, 192, 32, 1);
+                  font-weight: 600;
+                }
+              }
+              .contact__mxh {
+                margin-top: 2.4rem;
+                display: flex;
+                gap: 1.6rem;
+                font-size: 1.4rem;
+                color: white;
+                .mxh__item {
+                  width: 2.4rem;
+                  height: 2.4rem;
+
+                  border-radius: 50%;
+                  .fa-brands {
+                    width: inherit;
+                    height: inherit;
+                    padding: 0.6rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  }
+                }
+                .facebook {
+                  background-color: rgb(51, 76, 140);
+                }
+                .youtube {
+                  background-color: rgb(242, 0, 0);
+                }
+                .tiktok {
+                  background-color: rgb(12, 12, 12);
+                }
+                .linkedin {
+                  background-color: #0a76b3;
+                }
+                .instagram {
+                  background-image: linear-gradient(
+                    to top,
+                    rgb(224, 155, 61),
+                    rgb(199, 76, 77),
+                    rgb(194, 25, 117),
+                    rgb(112, 36, 196)
+                  );
+                }
+              }
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          .footer__item__content {
+            .footer__connect {
+              .connect__title {
+                .connect__title__text {
+                  font-size: 1.6rem;
+                  color: rgb(254, 192, 32);
+                  font-weight: 700;
+                }
+              }
+              .menu-connect {
+                margin-top: 2.4rem;
+                .connect-list {
+                  .connect__item {
+                    margin-bottom: 1rem;
+                    &:hover {
+                      .connect-link {
+                        color: rgb(254, 192, 32);
+                        .fa-arrow-up {
+                          -webkit-transform: rotate(90deg);
+                        }
+                      }
+                    }
+                    .connect-link {
+                      display: flex;
+                      align-items: center;
+                      gap: 0.7rem;
+                      color: white;
+                      transition: all 0.5s;
+                      .fa-arrow-up {
+                        -webkit-transform: rotate(45deg);
+                        transition: all 0.5s;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .col-4 {
+        width: 25%;
+      }
+      .col-2 {
+        width: 20%;
+      }
+    }
+  }
+  .footer__copy-right {
+    padding: 5.4rem;
+    border-top: 1px solid $color-gray;
+    text-align: center;
+    .copyRight-text {
+      color: rgba(255, 255, 255, 1);
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
+  }
+}
