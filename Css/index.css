@@ -804,7 +804,7 @@ img {
   color: rgb(25, 118, 210);
 }
 .header__mobile .mobile__con .mobile__content .mobile__nav .menu-nav .menu-list .menu-item .mobile__menu-link {
-  padding: 1.2rem;
+  padding: 1.2rem 2.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
