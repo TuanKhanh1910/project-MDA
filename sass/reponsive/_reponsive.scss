@@ -51,7 +51,6 @@
             }
           }
           .mobile__contact {
-            display: block;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -70,6 +69,38 @@
         }
         .header__mobile {
           top: calc(var(--size-hd-top) + var(--size-hd-bottom) * 0.09);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 440px) {
+    .container {
+      .header__content {
+        .header__mobile {
+          .mobile__con {
+            .mobile__content {
+              .mobile__nav {
+                .menu-nav {
+                  .menu-list {
+                    .menu-item {
+                      .mobile__menu-link {
+                        padding: 1.2rem 4rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 2.4rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .mobile__contact {
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+          }
         }
       }
     }
@@ -143,6 +174,23 @@
     }
     .fa-angles-down {
       display: none;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .banner__content {
+      padding-top: 6rem;
+      .banner__header {
+        font-size: 2.5rem;
+      }
+      .sub__title {
+        display: none;
+      }
+      .btn_signUp {
+        .btn__text {
+          font-size: 1.2rem;
+          padding: 1rem 2rem;
+        }
+      }
     }
   }
 }
@@ -226,6 +274,35 @@
       }
     }
   }
+  @media screen and (max-width: 400px) {
+    .container {
+      .partner__content {
+        .partner__item {
+          .card-header {
+            .partner-title {
+              font-size: 2rem;
+            }
+          }
+          .partner__top {
+            .top-circle2 {
+              left: 8%;
+            }
+
+            .top-circle3 {
+              left: 12.5%;
+            }
+          }
+          .img {
+            .sub__title {
+              .sub-title-content {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .achivement {
@@ -275,6 +352,26 @@
         .ach__item {
           margin-bottom: calc(var(--row-gap) * 5);
           padding: 0 calc(var(--col-gap) / 0.5);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .container {
+      .card__body {
+        .ach-title {
+          font-size: 2rem;
+        }
+      }
+      .card__bottom {
+        .ach__item {
+          .ach-details {
+            .item__right {
+              .right__title {
+                font-size: 2rem;
+              }
+            }
+          }
         }
       }
     }
@@ -404,6 +501,21 @@
       }
     }
   }
+  @media screen and (max-width: 400px) {
+    .feeling__content {
+      .item__left {
+        padding: 7.4rem 2rem;
+        .card__body {
+          background: transparent;
+          width: auto;
+          border: none;
+
+          .body-content {
+          }
+        }
+      }
+    }
+  }
 }
 
 .training {
@@ -471,6 +583,20 @@
             font-size: 3rem;
           }
         }
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .training__content {
+      .training-top {
+        .training-details {
+          .training-item {
+            padding: 0;
+          }
+        }
+      }
+      .training-bottom {
+        padding: 5.6rem 0.5rem 6.9rem 1.8rem;
       }
     }
   }
@@ -589,6 +715,15 @@
       display: none;
     }
   }
+  @media screen and (max-width: 400px) {
+    .tech-bottom {
+      .tech-content {
+        .col-tech {
+          width: 60%;
+        }
+      }
+    }
+  }
 }
 .slider {
   @media screen and (max-width: 600px) {
@@ -698,6 +833,13 @@
         .service-item {
           margin-bottom: calc(var(--row-gap) * 3);
         }
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .service-content {
+      .service-details {
+        padding: 0;
       }
     }
   }

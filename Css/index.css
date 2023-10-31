@@ -1567,6 +1567,7 @@ img {
 }
 .partner .container .partner__content .partner__item .img {
   position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .partner .container .partner__content .partner__item .img .partner__img {
   border-radius: 0 0 2.4rem 2.4rem;
@@ -2700,7 +2701,6 @@ img {
     display: none;
   }
   #header__MDA .container .header__content .header__mobile .mobile__contact {
-    display: block;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -2716,6 +2716,20 @@ img {
   }
   #header__MDA .container .header__content .header__mobile {
     top: calc(var(--size-hd-top) + var(--size-hd-bottom) * 0.09);
+  }
+}
+@media screen and (max-width: 440px) {
+  #header__MDA .container .header__content .header__mobile .mobile__con .mobile__content .mobile__nav .menu-nav .menu-list .menu-item .mobile__menu-link {
+    padding: 1.2rem 4rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.4rem;
+  }
+  #header__MDA .container .header__content .header__mobile .mobile__contact {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 }
 
@@ -2781,6 +2795,21 @@ img {
     display: none;
   }
 }
+@media screen and (max-width: 480px) {
+  .banner .banner__content {
+    padding-top: 6rem;
+  }
+  .banner .banner__content .banner__header {
+    font-size: 2.5rem;
+  }
+  .banner .banner__content .sub__title {
+    display: none;
+  }
+  .banner .banner__content .btn_signUp .btn__text {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+}
 
 @media screen and (max-width: 1043.9px) {
   .intro .container .intro__content .intro__item .card__header__left .intro__title {
@@ -2824,6 +2853,20 @@ img {
     width: 40%;
   }
 }
+@media screen and (max-width: 400px) {
+  .partner .container .partner__content .partner__item .card-header .partner-title {
+    font-size: 2rem;
+  }
+  .partner .container .partner__content .partner__item .partner__top .top-circle2 {
+    left: 8%;
+  }
+  .partner .container .partner__content .partner__item .partner__top .top-circle3 {
+    left: 12.5%;
+  }
+  .partner .container .partner__content .partner__item .img .sub__title .sub-title-content {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 1136px) and (max-width: 1243.9px) {
   .achivement .container .card__bottom .ach__item .ach-details .item__right .right__text {
@@ -2853,6 +2896,14 @@ img {
   .achivement .container .card__bottom .ach__item {
     margin-bottom: calc(var(--row-gap) * 5);
     padding: 0 calc(var(--col-gap) / 0.5);
+  }
+}
+@media screen and (max-width: 400px) {
+  .achivement .container .card__body .ach-title {
+    font-size: 2rem;
+  }
+  .achivement .container .card__bottom .ach__item .ach-details .item__right .right__title {
+    font-size: 2rem;
   }
 }
 
@@ -2928,6 +2979,16 @@ img {
     display: none;
   }
 }
+@media screen and (max-width: 400px) {
+  .feeling .feeling__content .item__left {
+    padding: 7.4rem 2rem;
+  }
+  .feeling .feeling__content .item__left .card__body {
+    background: transparent;
+    width: auto;
+    border: none;
+  }
+}
 
 @media screen and (max-width: 1100px) {
   .training .training__content .training-top .training-details {
@@ -2981,6 +3042,14 @@ img {
 @media screen and (max-width: 648px) {
   .training .training__content .training-top .training__header .header__title {
     font-size: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .training .training__content .training-top .training-details .training-item {
+    padding: 0;
+  }
+  .training .training__content .training-bottom {
+    padding: 5.6rem 0.5rem 6.9rem 1.8rem;
   }
 }
 
@@ -3075,6 +3144,11 @@ img {
     display: none;
   }
 }
+@media screen and (max-width: 400px) {
+  .tech .tech-bottom .tech-content .col-tech {
+    width: 60%;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .slider .silder__header .slider-title {
@@ -3148,6 +3222,11 @@ img {
   }
   .service .service-content .service-details .service-item {
     margin-bottom: calc(var(--row-gap) * 3);
+  }
+}
+@media screen and (max-width: 400px) {
+  .service .service-content .service-details {
+    padding: 0;
   }
 }
 
