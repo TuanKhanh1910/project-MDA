@@ -23,26 +23,37 @@
       .ach__item {
         padding: 0 calc(var(--col-gap) / 2);
         .ach-details {
-          padding: 2rem 3.2rem;
-          display: flex;
-          gap: 2.4rem;
-          background-color: white;
-          border: 1px solid $color-pri;
-          border-radius: 2.4rem;
+          // padding: 2rem 3.2rem;
+          // display: flex;
+          // gap: 2.4rem;
+          // background-color: white;
+          // border: 1px solid $color-pri;
+          // border-radius: 2.4rem;
           cursor: pointer;
           transition: all 0.5s;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2.4rem;
+          padding: 2.4rem 3.2rem;
+          border-radius: 2.4rem;
+          border: 0.1rem solid #1976d2;
+          position: relative;
+          z-index: 2;
+          overflow: hidden;
+          height: 100%;
           &:hover {
             background-color: $color-pri;
             border: 1px solid transparent;
             .item__left {
               .item__icon {
                 background-color: white;
-                .fa-solid {
-                  color: $color-pri;
+                img {
+                  filter: none;
                 }
               }
             }
             .item__right {
+              flex: 1;
               .right__title {
                 color: white;
               }
@@ -53,18 +64,26 @@
           }
           .item__left {
             .item__icon {
+              // width: 4.8rem;
+              // height: 4.8rem;
+              // background-color: $color-pri;
+              // border-radius: 50%;
+              // transition: all 0.5s;
               width: 4.8rem;
               height: 4.8rem;
-              background-color: $color-pri;
-              border-radius: 50%;
-              transition: all 0.5s;
-              .fa-solid {
-                padding: 1.4rem;
-                color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: all 0.5s;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 100rem;
+              background-color: #1976d2;
+              position: relative;
+              top: 0.5rem;
+              margin: 0 auto;
+              img {
+                width: 2.4rem;
+                height: 2.4rem;
+                filter: brightness(0) invert(1);
+                border-radius: unset;
               }
             }
           }

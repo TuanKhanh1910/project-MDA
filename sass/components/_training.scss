@@ -18,19 +18,19 @@
         --row-gap: 0.8rem;
         .training-item {
           padding: 0 calc(var(--col-gap) / 2);
-          &:nth-of-type(2),
-          &:nth-of-type(3) {
-            text-align: center;
-          }
-          &:last-of-type {
-            text-align: right;
-          }
-          &:nth-of-type(2) {
+          cursor: pointer;
+          &.active {
             .training-item-content {
+              .training-icon {
+                img {
+                  filter: none;
+                }
+              }
               .training-text {
                 font-size: 1.6rem;
                 font-weight: 700;
                 color: $color-pri;
+                transition: all 0.5s;
               }
               .training-circle {
                 .fa-circle {
@@ -40,7 +40,22 @@
               }
             }
           }
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            text-align: center;
+          }
+          &:last-of-type {
+            text-align: right;
+          }
+
           .training-item-content {
+            .training-icon {
+              img {
+                transition: all 0.5s;
+                filter: brightness(0) saturate(100%) invert(60%) sepia(13%)
+                  saturate(0%) hue-rotate(259deg) brightness(92%) contrast(90%);
+              }
+            }
             .training-text {
               font-size: 1.6rem;
               font-weight: 700;
@@ -50,6 +65,7 @@
             .training-circle {
               .fa-circle {
                 color: $color-gray;
+                transition: all 0.5s;
               }
             }
             .training-line1 {
@@ -59,7 +75,7 @@
                 height: 0.2rem;
                 width: 157%;
                 max-width: 41rem;
-                background-color: $color-pri;
+                background-color: $color-gray;
                 position: absolute;
                 top: 46%;
                 right: -64%;

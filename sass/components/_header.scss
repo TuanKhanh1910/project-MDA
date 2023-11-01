@@ -6,13 +6,19 @@
   left: 0;
   width: 100%;
   z-index: 10;
+  height: var(--size-hd);
+  transition: 0.5s cubic-bezier(0.72, 0.04, 0.49, 0.82);
+  &.sticky {
+    height: 6rem;
+  }
   .container {
     max-width: 175.4rem;
     .header__content {
       display: flex;
       justify-content: space-between;
-      padding: 2.3rem 5rem;
+      // padding: 2.3rem 5rem;
       align-items: center;
+      height: 100%;
       .header__left {
         display: flex;
         justify-content: space-between;
@@ -32,9 +38,9 @@
                 &:hover {
                   .menu-link {
                     color: $color-pri;
-                    .fa-chevron-down {
-                      animation: TopToBottom 1s linear infinite;
-                    }
+                    // .fa-chevron-down {
+                    //   animation: TopToBottom 1s linear infinite;
+                    // }
                   }
                   .drop-menu {
                     display: block;
@@ -213,7 +219,7 @@
 
               .header__zalo {
                 .header__zalo__title {
-                  font-size: 3.2rem;
+                  font-size: 2.5rem;
                   font-weight: 700;
                   color: $color-pri;
                   padding-bottom: 0.5rem;
@@ -245,16 +251,25 @@
           &:last-of-type {
             width: 2.344rem;
             height: 2.344rem;
-            border-radius: 50%;
-            background-color: rgba(218, 37, 29, 1);
-            .fa-star {
-              width: inherit;
-              height: inherit;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: rgba(255, 255, 0, 1);
-              padding: 0.6rem 0.5rem;
+          }
+        }
+        .dropdown {
+          cursor: pointer;
+          &:hover {
+            .item-american {
+              opacity: 1;
+            }
+          }
+          .item-american {
+            opacity: 0;
+            transition: all 0.5s;
+            // width: 100%;
+
+            // height: 100%;
+            .img-american {
+              // width: inherit;
+              // height: inherit;
+              // padding: 0.6rem;
             }
           }
         }

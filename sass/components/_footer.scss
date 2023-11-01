@@ -2,7 +2,6 @@
   background-color: rgba(13, 71, 161, 1);
 
   .container {
-    max-width: 175.4rem;
     .footer__content {
       padding: 8rem 6.4rem 7.4rem;
       display: flex;
@@ -190,6 +189,8 @@
                       .fa-arrow-up {
                         -webkit-transform: rotate(45deg);
                         transition: all 0.5s;
+                        font-size: 1.4rem;
+                        font-weight: 400;
                       }
                     }
                   }

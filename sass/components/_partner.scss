@@ -7,7 +7,7 @@
       --col-gap: 5.6rem;
       --row-gap: 0.8rem;
       .partner__item {
-        padding: 0 calc(var(--col-gap) / 1);
+        padding: 0 calc(var(--col-gap) / 2);
         &:last-of-type {
           margin-top: 2rem;
         }
@@ -25,7 +25,7 @@
             border-radius: 1.6rem;
             margin-bottom: 1.6rem;
             .sub__title1 {
-              padding: 2.4rem 1.9rem 0;
+              padding: 3.6rem 2rem;
               font-size: 1.6rem;
               color: $color-text;
               font-weight: 400;
@@ -46,52 +46,69 @@
             }
           }
         }
-        .card-bottom {
-          .btn-partner {
-            background-color: white;
-            border: 1px solid $color-pri;
-            border-radius: 10rem;
-            overflow: hidden;
-            position: relative;
+
+        // .btn-partner {
+        //   border: 0.1rem solid $color-pri;
+        //   padding: 1.2rem 2.4rem;
+        //   color: $color-pri;
+        //   position: relative;
+        //   z-index: 2;
+        //   background-color: white;
+
+        //   border-radius: 10rem;
+        //   overflow: hidden;
+        //   position: relative;
+        // }
+
+        .btn-partner {
+          display: inline-block;
+          background-color: white;
+          border: 1px solid $color-pri;
+          border-radius: 10rem;
+          overflow: hidden;
+          position: relative;
+          // width: 13.7rem;
+          // height: 4.8rem;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background: rgba(0, 84, 198, 1);
+            background: -webkit-linear-gradient(
+              to left,
+              rgba(0, 84, 198, 1),
+              rgba(0, 131, 222, 1)
+            );
+            background: linear-gradient(
+              to left,
+              rgba(0, 84, 198, 1),
+              rgba(0, 131, 222, 1)
+            );
+            transition: all 0.5s;
+            z-index: 1;
+          }
+          &:hover {
+            border: 1px solid transparent;
             &::after {
-              position: absolute;
-              content: "";
-              width: 0;
-              height: 100%;
-              top: 0;
-              right: 0;
-              background: rgba(0, 84, 198, 1);
-              background: -webkit-linear-gradient(
-                to left,
-                rgba(0, 84, 198, 1),
-                rgba(0, 131, 222, 1)
-              );
-              background: linear-gradient(
-                to left,
-                rgba(0, 84, 198, 1),
-                rgba(0, 131, 222, 1)
-              );
-              transition: all 0.5s;
-              z-index: 1;
-            }
-            &:hover {
-              border: 1px solid transparent;
-              &::after {
-                width: 100%;
-                left: 0%;
-              }
-              .btn-text {
-                color: white;
-              }
+              width: 100%;
+              left: 0%;
             }
             .btn-text {
-              padding: 1.2rem 2.4rem;
-              color: $color-pri;
-              position: relative;
-              z-index: 2;
+              color: white;
             }
           }
+          .btn-text {
+            display: inline-block;
+            padding: 1.2rem 2.4rem;
+            color: $color-pri;
+            position: relative;
+            z-index: 2;
+          }
         }
+
         .partner__top {
           background: rgba(0, 84, 198, 1);
           background: -webkit-linear-gradient(
@@ -136,8 +153,13 @@
         .img {
           position: relative;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          border-radius: 1.6rem;
           .partner__img {
             border-radius: 0 0 2.4rem 2.4rem;
+            height: 100%;
+            img {
+              height: 100%;
+            }
           }
           .sub__title {
             background-color: rgba(255, 255, 255, 1);
