@@ -1,0 +1,43 @@
+.event {
+  @media screen and (max-width: 800px) {
+    .event-bottom {
+      .col-4 {
+        width: calc(12 / 12 * 100%);
+      }
+      .event-content {
+        .event-item {
+          margin-bottom: 2rem;
+          .event-img {
+            &::after {
+              display: none;
+            }
+            img {
+              width: auto;
+            }
+            .event-play {
+              display: none;
+            }
+          }
+          .event-text {
+            .play-video {
+              display: block;
+            }
+          }
+        }
+      }
+      .arrow__item {
+        display: none;
+      }
+    }
+  }
+  @media screen and (max-width: 667px) {
+    .event-header {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      text-align: left;
+      justify-content: start;
+      align-items: start;
+    }
+  }
+}

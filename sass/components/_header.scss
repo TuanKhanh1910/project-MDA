@@ -287,7 +287,7 @@
         visibility: hidden;
         transform: translateX(-110%);
         border-top: 1px solid rgba(0, 0, 0, 0.1);
-        top: calc(var(--size-hd-top) + var(--size-hd-bottom) * 0.8);
+        top: var(--size-hd);
         &.open {
           opacity: 1;
           visibility: visible;

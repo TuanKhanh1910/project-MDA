@@ -1,0 +1,124 @@
+.feeling {
+  @media screen and (max-width: 1500px) {
+    .feeling__content {
+      .col-9,
+      .col-3 {
+        width: calc(12 / 12 * 100%);
+      }
+      .item__left {
+        padding: 7.4rem 5.6rem 7.4rem 10rem;
+        margin: 0 auto;
+        .card__body {
+          width: 85%;
+        }
+      }
+      .item__right {
+        .student__arrow {
+          left: 93%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1225px) {
+    .feeling__content {
+      .item__left {
+        .card-header {
+          .header__title {
+            font-size: 3rem;
+          }
+        }
+        .card__body {
+          .body-content {
+            .body-header {
+              .header-right {
+                .name-company {
+                  .name-text {
+                    font-size: 2rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1103px) {
+    .feeling__content {
+      .item__left {
+        .card-header {
+          .header__title {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1040px) {
+    .feeling__content {
+      .item__right {
+        .student__arrow {
+          display: none;
+        }
+        .student__plus {
+          display: block;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .feeling__content {
+      .item__left {
+        .card__bottom {
+          display: flex;
+
+          gap: 3rem;
+          .bottom__left {
+            width: auto;
+            gap: 0.6rem;
+            .box {
+              position: static;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .feeling__content {
+      .item__left {
+        .card__body {
+          .body-content {
+            padding: 6rem 1.2rem 6.5rem;
+            .body-bottom {
+              .sub-text1,
+              .sub-text2 {
+                font-size: 1.2rem;
+              }
+            }
+            .arrow-left,
+            .arrow-right {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .feeling__content {
+      .item__left {
+        padding: 7.4rem 2rem;
+        .card__body {
+          background: transparent;
+          width: auto;
+          border: none;
+
+          .body-content {
+          }
+        }
+      }
+    }
+  }
+}

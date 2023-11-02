@@ -1,0 +1,9 @@
+.slider {
+  @media screen and (max-width: 600px) {
+    .silder__header {
+      .slider-title {
+        font-size: 3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.training {
+  @media screen and (max-width: 1100px) {
+    .training__content {
+      .training-top {
+        .training-details {
+          margin: 0 auto;
+          .col-3 {
+            width: (12 /12 * 100%);
+          }
+          .training-item {
+            text-align: center;
+            margin: 0 auto calc(var(--row-gap) * 5);
+            padding: 0 calc(var(--col-gap) / 0.3);
+            .training-item-content {
+              padding: 1.75rem;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+              border-radius: 1.6rem;
+              position: relative;
+            }
+            .arrow-down {
+              display: block;
+              transform: translateY(65%);
+              .fa-down-long {
+                font-size: 3rem;
+                color: $color-gray;
+              }
+            }
+
+            .training-circle {
+              display: none;
+            }
+            &:last-of-type {
+              text-align: center;
+            }
+          }
+        }
+      }
+      .training-bottom {
+        .col-6 {
+          width: (12 /12 * 100%);
+        }
+        .training-bottom-item {
+          margin-bottom: calc(var(--row-gap) * 5);
+          padding: 0 calc(var(--col-gap) / 2);
+        }
+        .training-right {
+          text-align: end;
+          .backround-small {
+            display: none;
+          }
+          .backround-small2 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 824.9px) {
+    .training__content {
+      .training-top {
+        .training__header {
+          .header__title {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 760px) {
+    .training__content {
+      .training-top {
+        .training-details {
+          .training-item {
+            padding: 0;
+          }
+        }
+      }
+      .training-bottom {
+        padding: 5.6rem 0.5rem 6.9rem 1.8rem;
+      }
+    }
+  }
+  @media screen and (max-width: 611px) {
+    .training__content {
+      .training-bottom {
+        .training-left {
+          .training-left-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .training__content {
+      .training-top {
+        .training-details {
+          .training-item {
+            padding: 0;
+          }
+        }
+      }
+      .training-bottom {
+        padding: 5.6rem 0.5rem 6.9rem 1.8rem;
+      }
+    }
+  }
+}

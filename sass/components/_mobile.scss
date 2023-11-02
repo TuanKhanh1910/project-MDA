@@ -7,7 +7,7 @@
   transition-delay: 0s;
   //   transform: translateX(-100%);
   position: fixed;
-  top: calc(var(--size-hd-top) + var(--size-hd-bottom) * 0.8);
+  top: var(--size-hd);
   left: 0;
   bottom: 0;
   transform: translateX(-110%);

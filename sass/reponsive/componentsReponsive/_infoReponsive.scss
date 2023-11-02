@@ -1,0 +1,35 @@
+.intro {
+  @media screen and (max-width: 1043.9px) {
+    .container {
+      .intro__content {
+        .intro__item {
+          .card__header__left {
+            .intro__title {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 965px) {
+    .container {
+      .intro__content {
+        .col-6 {
+          width: calc(12 / 12 * 100%);
+        }
+        .intro__item {
+          margin-bottom: calc(var(--row-gap) * 5);
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          padding: calc(var(--col-gap) / 2);
+          border-radius: 1.6rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 965px) {
+  .intro {
+    padding: 5rem 0;
+  }
+}

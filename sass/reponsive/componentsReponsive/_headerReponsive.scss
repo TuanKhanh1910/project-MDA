@@ -1,0 +1,115 @@
+#header__MDA {
+  @media screen and (max-width: 1199.9px) {
+    .container {
+      .header__content {
+        // display: block;
+        .header__left {
+          .header__navbar {
+            display: none;
+          }
+        }
+        .header__burger {
+          display: block;
+        }
+        .header__right {
+          // display: none;
+        }
+        .header__mobile {
+          display: block;
+          .mobile__contact {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 825px) {
+    .container {
+      .header__content {
+        padding: 0.3rem 1rem;
+        .header__overlay {
+          top: calc(var(--size-hd-top) + var(--size-hd-bottom) * 0.09);
+        }
+        .header__mobile {
+          top: calc(var(--size-hd-top) + var(--size-hd-bottom) * 0.09);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 766.9px) {
+    .container {
+      .header__content {
+        padding: 0.2rem;
+        display: flex;
+        justify-content: space-between;
+        .header__burger {
+          margin-left: auto;
+        }
+        .header__right {
+          display: none;
+        }
+        .header__mobile {
+          .mobile__con {
+            .mobile__content {
+              .mobile__nav {
+                .menu-nav {
+                  .menu-list {
+                    .dropdown {
+                      .drop-menu {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .mobile__contact {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    .container {
+      .header__content {
+        .header__mobile {
+          .mobile__con {
+            .mobile__content {
+              .mobile__nav {
+                .menu-nav {
+                  .menu-list {
+                    .menu-item {
+                      .mobile__menu-link {
+                        padding: 1.2rem 4rem;
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 2.4rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .mobile__contact {
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 766.9px) {
+  #header__MDA {
+    height: 7rem;
+  }
+}

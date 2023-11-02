@@ -1,0 +1,27 @@
+.guest {
+  @media screen and (max-width: 1200px) {
+    .guest-content {
+      margin: 0;
+      .cols {
+        width: calc((6 / 12 * 100%) - 2rem);
+      }
+      .guest-item {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-right: 2rem;
+        border-radius: 2.4rem;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .guest-content {
+      .cols {
+        width: calc((12 / 12 * 100%));
+      }
+      // .guest-item {
+      //   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      //   margin-right: 2rem;
+      //   border-radius: 2.4rem;
+      // }
+    }
+  }
+}

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./Css/index.css" />
   </head>
@@ -260,104 +265,130 @@
       <!-- banner -->
       <section class="banner">
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper mySwiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
               <img
-                class="banner__img"
+                class="banner__img wow animate__animated animate__zoomIn"
                 src="./assets/image/banner_MDA.png"
                 alt=""
               />
               <div class="banner__content">
-                <h1 class="banner__header">
+                <h1
+                  class="banner__header wow animate__animated animate__delay-1s animate__fadeInUp"
+                >
                   <span class="title__bold">M</span>astering
                   <span class="title__bold">D</span>ata
                   <span class="title__bold">A</span>nalytics
                 </h1>
-                <p class="sub__title">
+                <p
+                  class="sub__title wow animate__animated animate__delay-2s animate__fadeInUp"
+                >
                   Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc
                   và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu
                   tố trình bày văn bản
                 </p>
-                <a href="#" class="btn_signUp">
+                <a
+                  href="#"
+                  class="btn_signUp wow animate__animated animate__delay-3s animate__fadeInUp"
+                >
                   <p class="btn__text">Đăng ký trải nghiệm</p>
                 </a>
               </div>
             </div>
             <div class="swiper-slide">
               <img
-                class="banner__img"
+                class="banner__img wow animate__animated animate__zoomIn"
                 src="./assets/image/banner_MDA.png"
                 alt=""
               />
               <div class="banner__content">
-                <h1 class="banner__header">
+                <h1
+                  class="banner__header wow animate__animated animate__delay-1s animate__fadeInUp"
+                >
                   <span class="title__bold">M</span>astering
                   <span class="title__bold">D</span>ata
                   <span class="title__bold">A</span>nalytics
                 </h1>
-                <p class="sub__title">
+                <p
+                  class="sub__title wow animate__animated animate__delay-2s animate__fadeInUp"
+                >
                   Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc
                   và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu
                   tố trình bày văn bản
                 </p>
-                <a href="#" class="btn_signUp">
+                <a
+                  href="#"
+                  class="btn_signUp wow animate__animated animate__delay-3s animate__fadeInUp"
+                >
                   <p class="btn__text">Đăng ký trải nghiệm</p>
                 </a>
               </div>
             </div>
             <div class="swiper-slide">
               <img
-                class="banner__img"
+                class="banner__img wow animate__animated animate__zoomIn"
                 src="./assets/image/banner_MDA.png"
                 alt=""
               />
               <div class="banner__content">
-                <h1 class="banner__header">
+                <h1
+                  class="banner__header wow animate__animated animate__delay-1s animate__fadeInUp"
+                >
                   <span class="title__bold">M</span>astering
                   <span class="title__bold">D</span>ata
                   <span class="title__bold">A</span>nalytics
                 </h1>
-                <p class="sub__title">
+                <p
+                  class="sub__title wow animate__animated animate__delay-2s animate__fadeInUp"
+                >
                   Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc
                   và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu
                   tố trình bày văn bản
                 </p>
-                <a href="#" class="btn_signUp">
+                <a
+                  href="#"
+                  class="btn_signUp wow animate__animated animate__delay-3s animate__fadeInUp"
+                >
                   <p class="btn__text">Đăng ký trải nghiệm</p>
                 </a>
               </div>
             </div>
-            ...
           </div>
-          <!-- If we need pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-
-          <!-- If we need navigation buttons -->
-          <!-- <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> -->
-
-          <!-- If we need scrollbar -->
-          <!-- <div class="swiper-scrollbar"></div> -->
-          <i class="fa-solid fa-angles-down"></i>
-          <div class="box">
-            <div class="box-item">
-              <div class="box-img box-inner" id="box-img">
+          <a
+            href="#"
+            class="banner_arrow wow animate__animated animate__delay-1s animate__fadeInDown"
+          >
+            <img
+              src="./assets/image/banner_arrow.png"
+              alt=""
+              class="arrow-up"
+            />
+          </a>
+          <div
+            class="box wow animate__animated animate__delay-1s animate__fadeInUp"
+            id="box"
+          >
+            <div class="box-item box-center active" id="box-item">
+              <div
+                class="box-img box-inner wow animate__animated animate__delay-2s animate__zoomIn"
+                id="box-img"
+              >
                 <img
-                  class="img__circle1"
+                  class="img__circle1 wow animate__animated animate__delay-3s animate__zoomIn"
                   src="./assets/image/banner_MDA.png"
                   alt=""
                 />
               </div>
             </div>
-            <div class="box-left box-item">
+            <div class="box-left box-item" id="box-item">
               <div class="box-img" id="box-img">
                 <img src="./assets/image/laptop.png" alt="" class="img-left" />
               </div>
             </div>
-            <div class="box-right box-item">
+            <div class="box-right box-item" id="box-item">
               <div class="box-img" id="box-img">
                 <img
                   src="./assets/image/universe.png"
@@ -373,7 +404,10 @@
       <section class="intro">
         <div class="container">
           <div class="intro__content row">
-            <div class="intro__item col-6">
+            <div
+              class="intro__item col-6 wow animate__animated animate__fadeInLeft animate__delay-1s"
+              data-wow-duration="2s"
+            >
               <div class="card__header__left">
                 <h2 class="intro__title">Mastering Data Analytics</h2>
               </div>
@@ -397,7 +431,10 @@
                 />
               </div>
             </div>
-            <div class="intro__item col-6">
+            <div
+              class="intro__item col-6 wow animate__animated animate__fadeInRight animate__delay-1s"
+              data-wow-duration="2s"
+            >
               <div class="card__header__right">
                 <img
                   src="./assets/image/intro__left.png"
@@ -449,7 +486,10 @@
       <section class="partner">
         <div class="container">
           <div class="partner__content row">
-            <div class="partner__item col-6">
+            <div
+              class="partner__item col-6 wow animate__animated animate__fadeInLeft animate__delay-1s"
+              data-wow-duration="3s"
+            >
               <div class="card-header">
                 <h2 class="partner-title">Đối tác của Microsoft</h2>
               </div>
@@ -478,7 +518,10 @@
                 <span class="btn-text">Đăng ký trải nghiệm</span>
               </a>
             </div>
-            <div class="partner__item col-6">
+            <div
+              class="partner__item col-6 wow animate__animated animate__fadeInRight animate__delay-1s"
+              data-wow-duration="3s"
+            >
               <div class="partner__top">
                 <div class="top-circle1">
                   <div class="box-iner"></div>
@@ -516,13 +559,22 @@
       <!-- achievement -->
       <section class="achivement">
         <div class="container">
-          <div class="card__header">
+          <div
+            class="card__header wow animate__animated animate__fadeInDown animate__delay-1"
+            data-wow-duration="2s"
+          >
             <p class="sub__title">Mastering Data Analytics</p>
           </div>
-          <div class="card__body">
+          <div
+            class="card__body wow animate__animated animate__fadeInDown animate__delay-2"
+            data-wow-duration="2s"
+          >
             <h1 class="ach-title">Thành tựu ấn tượng</h1>
           </div>
-          <div class="card__bottom row">
+          <div
+            class="card__bottom row card__body wow animate__animated animate__fadeInUp animate__delay-2"
+            data-wow-duration="2s"
+          >
             <div class="ach__item col-3">
               <div class="ach-details">
                 <div class="item__left">
@@ -534,7 +586,7 @@
                   </div>
                 </div>
                 <div class="item__right">
-                  <p class="right__title">22 +</p>
+                  <p class="right__title"><span class="counter">22</span>+</p>
                   <p class="right__text">Công ty hợp tác đào tạo</p>
                 </div>
               </div>
@@ -550,7 +602,7 @@
                   </div>
                 </div>
                 <div class="item__right">
-                  <p class="right__title">37 +</p>
+                  <p class="right__title"><span class="counter">37</span>+</p>
                   <p class="right__text">Khoá học được khai giảng</p>
                 </div>
               </div>
@@ -566,7 +618,9 @@
                   </div>
                 </div>
                 <div class="item__right">
-                  <p class="right__title">1.000 +</p>
+                  <p class="right__title">
+                    <span class="counter">1.000</span>+
+                  </p>
                   <p class="right__text">
                     Học viên được đào tạo từ chương trình
                   </p>
@@ -584,7 +638,7 @@
                   </div>
                 </div>
                 <div class="item__right">
-                  <p class="right__title">> 95%</p>
+                  <p class="right__title">><span class="counter">95</span>%</p>
                   <p class="right__text">
                     Học viên phản hồi tốt về chương trình
                   </p>
@@ -598,14 +652,23 @@
       <section class="feeling">
         <div class="feeling__content row">
           <div class="feeling__item item__left col-9">
-            <div class="backround-right">
+            <div
+              class="backround-right wow animate__animated animate__zoomIn"
+              data-wow-duration="2s"
+            >
               <img src="./assets/image/bg_right.png" alt="" />
             </div>
-            <div class="card-header">
+            <div
+              class="card-header wow animate__animated animate__delay-1s animate__fadeInDown"
+              data-wow-duration="2s"
+            >
               <p class="sub__title">Chia sẻ từ</p>
               <h2 class="header__title">Khách hàng doanh nghiệp</h2>
             </div>
-            <div class="card__body">
+            <div
+              class="card__body wow animate__animated animate__delay-1s animate__fadeInLeft"
+              data-wow-duration="2s"
+            >
               <div class="body-content">
                 <div class="body-header">
                   <div class="header-left">
@@ -654,7 +717,10 @@
                 </div>
               </div>
             </div>
-            <div class="card__bottom">
+            <div
+              class="card__bottom wow animate__animated animate__delay-1s animate__fadeInUp"
+              data-wow-duration="2s"
+            >
               <div class="bottom__left">
                 <div class="box">
                   <img
@@ -715,119 +781,367 @@
           </div>
           <div class="feeling__item item__right col-3">
             <div class="right__header">
-              <p class="right_text">Cảm nhận</p>
-              <h2 class="right__title">Học viên</h2>
+              <p
+                class="right_text wow animate__animated animate__delay-1s animate__fadeInDown"
+                data-wow-duration="2s"
+              >
+                Cảm nhận
+              </p>
+              <h2
+                class="right__title wow animate__animated animate__delay-1s animate__fadeInRight"
+                data-wow-duration="2s"
+              >
+                Học viên
+              </h2>
             </div>
-            <div class="right__center">
-              <div class="student__content">
-                <div class="student__item">
-                  <div class="student_item_header">
-                    <div class="student__item__left">
-                      <div class="box-student">
-                        <img
-                          src="https://i.pravatar.cc/40"
-                          alt=""
-                          class="student"
-                        />
-                      </div>
-                    </div>
-                    <div class="student__item__right">
-                      <div class="student__name">
-                        <h3 class="student-title">Nguyễn Trần Hoàng Nam</h3>
-                        <p class="student-rating">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                        </p>
-                        <p class="student_work-position">Data Analytics Lead</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="student__item__bottom">
-                    <p class="student__sub-title">
-                      “ Mastering Data Analytics vinh dự là Đối tác chính thức
-                      đào tạo Sessions Training Data Analytics cho nhân viên
-                      Coca cola Việt Nam.
-                    </p>
-                  </div>
-                </div>
-                <div class="student__item">
-                  <div class="student_item_header">
-                    <div class="student__item__left">
-                      <div class="box-student">
-                        <div class="box-student-inner">
-                          <img
-                            src="https://i.pravatar.cc/50"
-                            alt=""
-                            class="student"
-                          />
+            <div
+              class="right__center wow animate__animated animate__delay-1s animate__fadeInUp"
+              data-wow-duration="2s"
+            >
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="student__item">
+                      <div class="student_item_header">
+                        <div class="student__item__left">
+                          <div class="box-student">
+                            <img
+                              src="https://i.pravatar.cc/40"
+                              alt=""
+                              class="student"
+                            />
+                          </div>
+                        </div>
+                        <div class="student__item__right">
+                          <div class="student__name">
+                            <h3 class="student-title">Nguyễn Trần Hoàng Nam</h3>
+                            <p class="student-rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p class="student_work-position">
+                              Data Analytics Lead
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="student__item__right">
-                      <div class="student__name">
-                        <h3 class="student-title">Bùi Minh Đức</h3>
-                        <p class="student-rating">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
+                      <div class="student__item__bottom">
+                        <p class="student__sub-title">
+                          “ Mastering Data Analytics vinh dự là Đối tác chính
+                          thức đào tạo Sessions Training Data Analytics cho nhân
+                          viên Coca cola Việt Nam.
                         </p>
-                        <p class="student_work-position">Data Analytics Lead</p>
                       </div>
                     </div>
                   </div>
-                  <div class="student__item__bottom">
-                    <p class="student__sub-title">
-                      “ Mastering Data Analytics vinh dự là Đối tác chính thức
-                      đào tạo Sessions Training Data Analytics cho nhân viên
-                      Coca cola Việt Nam.
-                    </p>
-                  </div>
-                </div>
-                <div class="student__item">
-                  <div class="student_item_header">
-                    <div class="student__item__left">
-                      <div class="box-student">
-                        <div class="box-student-inner">
-                          <img
-                            src="https://i.pravatar.cc/50"
-                            alt=""
-                            class="student"
-                          />
+                  <div class="swiper-slide">
+                    <div class="student__item">
+                      <div class="student_item_header">
+                        <div class="student__item__left">
+                          <div class="box-student">
+                            <img
+                              src="https://i.pravatar.cc/40"
+                              alt=""
+                              class="student"
+                            />
+                          </div>
+                        </div>
+                        <div class="student__item__right">
+                          <div class="student__name">
+                            <h3 class="student-title">Nguyễn Trần Hoàng Nam</h3>
+                            <p class="student-rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p class="student_work-position">
+                              Data Analytics Lead
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="student__item__right">
-                      <div class="student__name">
-                        <h3 class="student-title">Hoàng Thị Thanh Huyền</h3>
-                        <p class="student-rating">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
+                      <div class="student__item__bottom">
+                        <p class="student__sub-title">
+                          “ Mastering Data Analytics vinh dự là Đối tác chính
+                          thức đào tạo Sessions Training Data Analytics cho nhân
+                          viên Coca cola Việt Nam.
                         </p>
-                        <p class="student_work-position">Data Analytics Lead</p>
                       </div>
                     </div>
                   </div>
-                  <div class="student__item__bottom">
-                    <p class="student__sub-title">
-                      “ Mastering Data Analytics vinh dự là Đối tác chính thức
-                      đào tạo Sessions Training Data Analytics cho nhân viên
-                      Coca cola Việt Nam.
-                    </p>
+                  <div class="swiper-slide">
+                    <div class="student__item">
+                      <div class="student_item_header">
+                        <div class="student__item__left">
+                          <div class="box-student">
+                            <img
+                              src="https://i.pravatar.cc/40"
+                              alt=""
+                              class="student"
+                            />
+                          </div>
+                        </div>
+                        <div class="student__item__right">
+                          <div class="student__name">
+                            <h3 class="student-title">Nguyễn Trần Hoàng Nam</h3>
+                            <p class="student-rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p class="student_work-position">
+                              Data Analytics Lead
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="student__item__bottom">
+                        <p class="student__sub-title">
+                          “ Mastering Data Analytics vinh dự là Đối tác chính
+                          thức đào tạo Sessions Training Data Analytics cho nhân
+                          viên Coca cola Việt Nam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="student__item">
+                      <div class="student_item_header">
+                        <div class="student__item__left">
+                          <div class="box-student">
+                            <img
+                              src="https://i.pravatar.cc/40"
+                              alt=""
+                              class="student"
+                            />
+                          </div>
+                        </div>
+                        <div class="student__item__right">
+                          <div class="student__name">
+                            <h3 class="student-title">Nguyễn Trần Hoàng Nam</h3>
+                            <p class="student-rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p class="student_work-position">
+                              Data Analytics Lead
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="student__item__bottom">
+                        <p class="student__sub-title">
+                          “ Mastering Data Analytics vinh dự là Đối tác chính
+                          thức đào tạo Sessions Training Data Analytics cho nhân
+                          viên Coca cola Việt Nam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="student__item">
+                      <div class="student_item_header">
+                        <div class="student__item__left">
+                          <div class="box-student">
+                            <img
+                              src="https://i.pravatar.cc/40"
+                              alt=""
+                              class="student"
+                            />
+                          </div>
+                        </div>
+                        <div class="student__item__right">
+                          <div class="student__name">
+                            <h3 class="student-title">Nguyễn Trần Hoàng Nam</h3>
+                            <p class="student-rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p class="student_work-position">
+                              Data Analytics Lead
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="student__item__bottom">
+                        <p class="student__sub-title">
+                          “ Mastering Data Analytics vinh dự là Đối tác chính
+                          thức đào tạo Sessions Training Data Analytics cho nhân
+                          viên Coca cola Việt Nam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="student__item">
+                      <div class="student_item_header">
+                        <div class="student__item__left">
+                          <div class="box-student">
+                            <img
+                              src="https://i.pravatar.cc/40"
+                              alt=""
+                              class="student"
+                            />
+                          </div>
+                        </div>
+                        <div class="student__item__right">
+                          <div class="student__name">
+                            <h3 class="student-title">Nguyễn Trần Hoàng Nam</h3>
+                            <p class="student-rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p class="student_work-position">
+                              Data Analytics Lead
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="student__item__bottom">
+                        <p class="student__sub-title">
+                          “ Mastering Data Analytics vinh dự là Đối tác chính
+                          thức đào tạo Sessions Training Data Analytics cho nhân
+                          viên Coca cola Việt Nam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="student__item">
+                      <div class="student_item_header">
+                        <div class="student__item__left">
+                          <div class="box-student">
+                            <img
+                              src="https://i.pravatar.cc/40"
+                              alt=""
+                              class="student"
+                            />
+                          </div>
+                        </div>
+                        <div class="student__item__right">
+                          <div class="student__name">
+                            <h3 class="student-title">Nguyễn Trần Hoàng Nam</h3>
+                            <p class="student-rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p class="student_work-position">
+                              Data Analytics Lead
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="student__item__bottom">
+                        <p class="student__sub-title">
+                          “ Mastering Data Analytics vinh dự là Đối tác chính
+                          thức đào tạo Sessions Training Data Analytics cho nhân
+                          viên Coca cola Việt Nam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="student__item">
+                      <div class="student_item_header">
+                        <div class="student__item__left">
+                          <div class="box-student">
+                            <img
+                              src="https://i.pravatar.cc/40"
+                              alt=""
+                              class="student"
+                            />
+                          </div>
+                        </div>
+                        <div class="student__item__right">
+                          <div class="student__name">
+                            <h3 class="student-title">Nguyễn Trần Hoàng Nam</h3>
+                            <p class="student-rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p class="student_work-position">
+                              Data Analytics Lead
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="student__item__bottom">
+                        <p class="student__sub-title">
+                          “ Mastering Data Analytics vinh dự là Đối tác chính
+                          thức đào tạo Sessions Training Data Analytics cho nhân
+                          viên Coca cola Việt Nam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="student__item">
+                      <div class="student_item_header">
+                        <div class="student__item__left">
+                          <div class="box-student">
+                            <img
+                              src="https://i.pravatar.cc/40"
+                              alt=""
+                              class="student"
+                            />
+                          </div>
+                        </div>
+                        <div class="student__item__right">
+                          <div class="student__name">
+                            <h3 class="student-title">Nguyễn Trần Hoàng Nam</h3>
+                            <p class="student-rating">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p class="student_work-position">
+                              Data Analytics Lead
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="student__item__bottom">
+                        <p class="student__sub-title">
+                          “ Mastering Data Analytics vinh dự là Đối tác chính
+                          thức đào tạo Sessions Training Data Analytics cho nhân
+                          viên Coca cola Việt Nam.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- <div class="swiper-button-prev arrow-item"></div>
+                <div class="swiper-button-next arrow-item"></div> -->
+                <!-- <div class="swiper-pagination"></div> -->
               </div>
             </div>
-            <div class="student__arrow">
+            <!-- <div class="student__arrow">
               <i class="fa-solid fa-angle-down"></i>
-            </div>
+            </div> -->
             <div class="student__plus">
               <p class="plus-title">Xem thêm</p>
             </div>
@@ -840,10 +1154,19 @@
           <div class="training__content">
             <div class="training-top">
               <div class="training__header">
-                <h1 class="header__title">Khoá đào tạo & dịch vụ nổi bật</h1>
+                <h1
+                  class="header__title wow animate__animated animate__delay-1s animate__fadeInLeft"
+                  data-wow-duration="2s"
+                >
+                  Khoá đào tạo & dịch vụ nổi bật
+                </h1>
               </div>
               <div class="training-details row">
-                <div class="training-item col-3" id="training-item">
+                <div
+                  class="training-item col-3 wow animate__animated animate__delay-1s animate__zoomIn"
+                  id="training-item"
+                  data-wow-duration="2s"
+                >
                   <div class="training-item-content">
                     <div class="training-icon">
                       <img src="./assets/image/BI.png" alt="" />
@@ -857,7 +1180,11 @@
                     <i class="fa-solid fa-down-long"></i>
                   </div>
                 </div>
-                <div class="training-item col-3" id="training-item">
+                <div
+                  class="training-item col-3 wow animate__animated animate__delay-1s animate__zoomIn"
+                  id="training-item"
+                  data-wow-duration="2s"
+                >
                   <div class="training-item-content">
                     <div class="training-icon">
                       <img src="./assets/image/BA.png" alt="" />
@@ -871,7 +1198,11 @@
                     <i class="fa-solid fa-down-long"></i>
                   </div>
                 </div>
-                <div class="training-item col-3" id="training-item">
+                <div
+                  class="training-item col-3 wow animate__animated animate__delay-1s animate__zoomIn"
+                  id="training-item"
+                  data-wow-duration="2s"
+                >
                   <div class="training-item-content">
                     <div class="training-icon">
                       <img src="./assets/image/CT.png" alt="" />
@@ -885,7 +1216,11 @@
                     <i class="fa-solid fa-down-long"></i>
                   </div>
                 </div>
-                <div class="training-item col-3" id="training-item">
+                <div
+                  class="training-item col-3 wow animate__animated animate__delay-1s animate__zoomIn"
+                  id="training-item"
+                  data-wow-duration="2s"
+                >
                   <div class="training-item-content">
                     <div class="training-icon">
                       <img src="./assets/image/CC.png" alt="" />
@@ -898,8 +1233,13 @@
                 </div>
               </div>
             </div>
-            <div class="training-bottom row">
-              <div class="training-left training-bottom-item col-6">
+            <div
+              class="training-bottom row wow animate__animated animate__delay-1s animate__fadeInUp"
+              data-wow-duration="2s"
+            >
+              <div
+                class="training-left training-bottom-item col-6 header__title wow animate__animated animate__delay-2s animate__fadeInLeft"
+              >
                 <div class="training-left-header">
                   <h2 class="left-title">Bạn sẽ được học những gì?</h2>
                 </div>
@@ -961,7 +1301,9 @@
                   </a>
                 </div>
               </div>
-              <div class="training-right training-bottom-item col-6">
+              <div
+                class="training-right training-bottom-item col-6 wow animate__animated animate__delay-2s animate__fadeInRight"
+              >
                 <div class="backround-big">
                   <img
                     src="./assets/image/training__big.png"
@@ -992,10 +1334,18 @@
       <section class="guest">
         <div class="container">
           <div class="guest__header">
-            <h1 class="guest-title">Khách hàng của MDA</h1>
+            <h1
+              class="guest-title wow animate__animated animate__delay-1s animate__fadeInDown"
+              data-wow-duration="2s"
+            >
+              Khách hàng của MDA
+            </h1>
           </div>
           <div class="guest-content row">
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInLeft"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img
                   src="./assets/image/Eximbank.png"
@@ -1004,17 +1354,26 @@
                 />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInLeft"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img src="./assets/image/Lazada.png" alt="" class="lazada" />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInLeft"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img src="./assets/image/Lotte.png" alt="" class="lotte" />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInLeft"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img
                   src="./assets/image/Vinamilk.png"
@@ -1023,7 +1382,10 @@
                 />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInLeft"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img
                   src="./assets/image/Panasonic.png"
@@ -1032,7 +1394,10 @@
                 />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInLeft"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img
                   src="./assets/image/Vietinbank.png"
@@ -1041,17 +1406,26 @@
                 />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInLeft"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img src="./assets/image/aeon.png" alt="" class="aeon" />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInRight"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img src="./assets/image/pvBank.png" alt="" class="pvBank" />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInRight"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img
                   src="./assets/image/Mindshare.png"
@@ -1060,12 +1434,18 @@
                 />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInRight"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img src="./assets/image/PNJ.png" alt="" class="pnj" />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInRight"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img
                   src="./assets/image/Mindshare.png"
@@ -1074,40 +1454,30 @@
                 />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInRight"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img src="./assets/image/PNJ.png" alt="" class="pnj" />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInRight"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img src="./assets/image/fpt.png" alt="" class="fpt" />
               </div>
             </div>
-            <div class="guest-item cols">
+            <div
+              class="guest-item cols wow animate__animated animate__delay-2s animate__fadeInRight"
+              data-wow-duration="2s"
+            >
               <div class="guest-img">
                 <img src="./assets/image/Baemin.png" alt="" class="baemin" />
               </div>
             </div>
-          </div>
-          <div class="paginations">
-            <ul class="pages-circle">
-              <li class="pages-item">
-                <a href="#" class="pages-link">
-                  <i class="fa-solid fa-circle"></i>
-                </a>
-              </li>
-              <li class="pages-item">
-                <a href="#" class="pages-link">
-                  <i class="fa-solid fa-circle"></i>
-                </a>
-              </li>
-              <li class="pages-item">
-                <a href="#" class="pages-link">
-                  <i class="fa-solid fa-circle"></i>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
@@ -1115,10 +1485,16 @@
       <section class="tech">
         <div class="container">
           <div class="tech-header row">
-            <div class="header-left header-item col-5">
+            <div
+              class="header-left header-item col-5 wow animate__animated animate__delay-1s animate__fadeInLeft"
+              data-wow-duration="2s"
+            >
               <h1 class="tech-title">Công nghệ được sử dụng</h1>
             </div>
-            <div class="header-right header-item col-7">
+            <div
+              class="header-right header-item col-7 wow animate__animated animate__delay-1s animate__fadeInRight"
+              data-wow-duration="2s"
+            >
               <p class="tech-sub-title">
                 Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và
                 rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố
@@ -1130,38 +1506,89 @@
           <div class="tech-bottom">
             <div class="tech-content row">
               <div class="tech-item col-tech">
-                <div class="item-img">
-                  <img src="./assets/image/Power_BI.png" alt="" class="BI" />
+                <div
+                  class="item-img wow animate__animated animate__delay-1s animate__zoomIn"
+                  data-wow-duration="2s"
+                >
+                  <img
+                    src="./assets/image/Power_BI.png"
+                    alt=""
+                    class="BI wow animate__animated animate__delay-2s animate__zoomIn"
+                  />
                 </div>
-                <p class="item-text">Power BI</p>
+                <p
+                  class="item-text wow animate__animated animate__delay-2s animate__zoomIn"
+                >
+                  Power BI
+                </p>
               </div>
               <div class="tech-item col-tech">
-                <div class="item-img">
-                  <img src="./assets/image/SQL.png" alt="" class="sql" />
+                <div
+                  class="item-img wow animate__animated animate__delay-1s animate__zoomIn"
+                  data-wow-duration="2s"
+                >
+                  <img
+                    src="./assets/image/SQL.png"
+                    alt=""
+                    class="sql wow animate__animated animate__delay-2s animate__zoomIn"
+                  />
                 </div>
-                <p class="item-text">Cơ sở dữ liệu</p>
+                <p
+                  class="item-text wow animate__animated animate__delay-2s animate__zoomIn"
+                >
+                  Cơ sở dữ liệu
+                </p>
               </div>
               <div class="tech-item col-tech">
-                <div class="item-img">
-                  <img src="./assets/image/Alteryx.png" alt="" class="altery" />
+                <div
+                  class="item-img wow animate__animated animate__delay-1s animate__zoomIn"
+                  data-wow-duration="2s"
+                >
+                  <img
+                    src="./assets/image/Alteryx.png"
+                    alt=""
+                    class="altery wow animate__animated animate__delay-2s animate__zoomIn"
+                  />
                 </div>
-                <p class="item-text">Alteryx</p>
+                <p
+                  class="item-text wow animate__animated animate__delay-2s animate__zoomIn"
+                >
+                  Alteryx
+                </p>
               </div>
               <div class="tech-item col-tech">
-                <div class="item-img">
-                  <img src="./assets/image/Qlik.png" alt="" class="qlik" />
+                <div
+                  class="item-img wow animate__animated animate__delay-1s animate__zoomIn"
+                  data-wow-duration="2s"
+                >
+                  <img
+                    src="./assets/image/Qlik.png"
+                    alt=""
+                    class="qlik wow animate__animated animate__delay-2s animate__zoomIn"
+                  />
                 </div>
-                <p class="item-text">Qlik</p>
+                <p
+                  class="item-text wow animate__animated animate__delay-2s animate__zoomIn"
+                >
+                  Qlik
+                </p>
               </div>
               <div class="tech-item col-tech">
-                <div class="item-img">
+                <div
+                  class="item-img wow animate__animated animate__delay-1s animate__zoomIn"
+                  data-wow-duration="2s"
+                >
                   <img
                     src="./assets/image/Tableau.png"
                     alt=""
-                    class="tableau"
+                    class="tableau wow animate__animated animate__delay-2s animate__zoomIn"
                   />
                 </div>
-                <p class="item-text">Tableau</p>
+                <p
+                  class="item-text wow animate__animated animate__delay-2s animate__zoomIn"
+                >
+                  Tableau
+                </p>
               </div>
             </div>
           </div>
@@ -1176,7 +1603,12 @@
       <!-- slider -->
       <section class="slider">
         <div class="silder__header">
-          <h1 class="slider-title">Hình ảnh và video đào tạo</h1>
+          <h1
+            class="slider-title wow animate__animated animate__delay-1s animate__fadeInDown"
+            data-wow-duration="2s"
+          >
+            Hình ảnh và video đào tạo
+          </h1>
         </div>
         <div class="silder__bottom">
           <div class="silder-content">
@@ -1247,62 +1679,109 @@
       <!-- event -->
       <section class="event">
         <div class="container">
-          <p class="event-sub-title">Mastering Data Analytics</p>
+          <p
+            class="event-sub-title wow animate__animated animate__delay-1s animate__fadeInDown"
+          >
+            Mastering Data Analytics
+          </p>
           <div class="event-header">
-            <h1 class="event-title">Sự kiện đã tổ chức</h1>
-            <a href="#" class="btn-seeAll">
+            <h1
+              class="event-title wow animate__animated animate__delay-1s animate__fadeInLeft"
+            >
+              Sự kiện đã tổ chức
+            </h1>
+            <a
+              href="#"
+              class="btn-seeAll wow animate__animated animate__delay-1s animate__fadeInRight"
+            >
               Xem tất cả
               <i class="fa-solid fa-arrow-up"></i>
             </a>
           </div>
-          <div class="event-bottom">
-            <div class="event-content row">
-              <div class="event-item col-4">
-                <div class="event-img">
-                  <img src="./assets/image/event_1.png" alt="" />
-                  <div class="event-play">
-                    <i class="fa-solid fa-circle-play"></i>
+          <div
+            class="event-bottom wow animate__animated animate__delay-2s animate__zoomIn"
+            data-wow-duration="2s"
+          >
+            <div class="swiper mySwiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="event-item">
+                    <div class="event-img">
+                      <img src="./assets/image/event_1.png" alt="" />
+                      <div class="event-play">
+                        <i class="fa-solid fa-circle-play"></i>
+                      </div>
+                    </div>
+                    <p class="event-text">
+                      Trái với quan điểm chung của số đông, không phải chỉ là
+                      một đoạn văn bản.
+                      <a href="#" class="play-video">Xem Video ở đây</a>
+                    </p>
                   </div>
                 </div>
-                <p class="event-text">
-                  Trái với quan điểm chung của số đông, không phải chỉ là một
-                  đoạn văn bản.
-                  <a href="#" class="play-video">Xem Video ở đây</a>
-                </p>
-              </div>
-              <div class="event-item col-4">
-                <div class="event-img">
-                  <img src="./assets/image/event_2.png" alt="" />
-                  <div class="event-play">
-                    <i class="fa-solid fa-circle-play"></i>
+                <div class="swiper-slide">
+                  <div class="event-item">
+                    <div class="event-img">
+                      <img src="./assets/image/event_2.png" alt="" />
+                      <div class="event-play">
+                        <i class="fa-solid fa-circle-play"></i>
+                      </div>
+                    </div>
+                    <p class="event-text">
+                      Trái với quan điểm chung của số đông, không phải chỉ là
+                      một đoạn văn bản.
+                      <a href="#" class="play-video">Xem Video ở đây</a>
+                    </p>
                   </div>
                 </div>
-                <p class="event-text">
-                  Trái với quan điểm chung của số đông, không phải chỉ là một
-                  đoạn văn bản.
-                  <a href="#" class="play-video">Xem Video ở đây</a>
-                </p>
-              </div>
-              <div class="event-item col-4">
-                <div class="event-img">
-                  <img src="./assets/image/event_3.png" alt="" />
-                  <div class="event-play">
-                    <i class="fa-solid fa-circle-play"></i>
+                <div class="swiper-slide">
+                  <div class="event-item">
+                    <div class="event-img">
+                      <img src="./assets/image/event_3.png" alt="" />
+                      <div class="event-play">
+                        <i class="fa-solid fa-circle-play"></i>
+                      </div>
+                    </div>
+                    <p class="event-text">
+                      Trái với quan điểm chung của số đông, không phải chỉ là
+                      một đoạn văn bản.
+                      <a href="#" class="play-video">Xem Video ở đây</a>
+                    </p>
                   </div>
                 </div>
-                <p class="event-text">
-                  Trái với quan điểm chung của số đông, không phải chỉ là một
-                  đoạn văn bản.
-                  <a href="#" class="play-video">Xem Video ở đây</a>
-                </p>
+                <div class="swiper-slide">
+                  <div class="event-item">
+                    <div class="event-img">
+                      <img
+                        src="https://images.unsplash.com/photo-1683009427540-c5bd6a32abf6?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      />
+                      <div class="event-play">
+                        <i class="fa-solid fa-circle-play"></i>
+                      </div>
+                    </div>
+                    <p class="event-text">
+                      Trái với quan điểm chung của số đông, không phải chỉ là
+                      một đoạn văn bản.
+                      <a href="#" class="play-video">Xem Video ở đây</a>
+                    </p>
+                  </div>
+                </div>
+
+                ...
               </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
             </div>
-            <div class="arrow-left arrow__item">
-              <i class="fa-solid fa-angle-left"></i>
-            </div>
-            <div class="arrow-right arrow__item">
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </section>
@@ -1310,7 +1789,9 @@
       <section class="service">
         <div class="container">
           <div class="service-content">
-            <div class="service-bg">
+            <div
+              class="service-bg wow animate__animated animate__delay-1s animate__zoomIn"
+            >
               <img
                 src="./assets/image/service_bg.png"
                 alt=""
@@ -1320,9 +1801,15 @@
             <div class="service-details row">
               <div class="service-item service-left col-6">
                 <div class="service-left-header">
-                  <h1 class="service-title">LIÊN HỆ TƯ VẤN</h1>
+                  <h1
+                    class="service-title wow animate__animated animate__delay-2s animate__fadeInDown"
+                  >
+                    LIÊN HỆ TƯ VẤN
+                  </h1>
                 </div>
-                <p class="service-sub-title">
+                <p
+                  class="service-sub-title wow animate__animated animate__delay-2s animate__fadeInLeft"
+                >
                   Trái với quan điểm chung của số đông, Lorem Ipsum không phải
                   chỉ là một đoạn văn bản ngẫu nhiên. Người ta tìm thấy nguồn
                   gốc của nó từ những tác phẩm văn học la-tinh cổ điển xuất hiện
@@ -1335,34 +1822,37 @@
                     type="text"
                     name=""
                     id="form-name"
-                    class="form-name"
+                    class="form-name wow animate__animated animate__delay-2s animate__fadeInRight"
                     placeholder="Trần Văn Đạt"
                   />
                   <input
                     type="email"
                     placeholder="Email"
-                    id="form-email"
-                    class="form-email"
+                    id="form-email "
+                    class="form-email wow animate__animated animate__delay-2s animate__fadeInRight"
                   />
                   <input
                     type="number"
                     name=""
                     id="form-number"
-                    class="form-number"
+                    class="form-number wow animate__animated animate__delay-3s animate__fadeInRight"
                     placeholder="Số điện thoại"
                   />
                   <textarea
                     cols="50"
                     name=""
                     id="form-text"
-                    class="form-text"
+                    class="form-text wow animate__animated animate__delay-3s animate__fadeInRight"
                     cols="30"
                     rows="10"
                     placeholder="Lời nhắn"
                   ></textarea>
                 </form>
 
-                <a href="#" class="btn-form">
+                <a
+                  href="#"
+                  class="btn-form wow animate__animated animate__delay-4s animate__fadeInUp"
+                >
                   <span class="btn-signUp">Đăng ký ngay</span>
                 </a>
               </div>
@@ -1533,15 +2023,35 @@
       </div>
     </footer>
 
-    <!-- swiper js -->
-
     <script src="./js/library/jquery/jquery.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <script src="./js/jquery.countup.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".counter").countUp();
+    </script>
+
     <script src="./js/library/swiper/swiper-bundle.min.js"></script>
     <script src="./js/library/aos/aos.js"></script>
     <script src="./js/library/select2/select2.min.js"></script>
     <script src="./js/library/gallery/lightgallery-all.min.js"></script>
     <script src="./js/library/jquery/jquery-migrate.js"></script>
     <script src="./js/library/fancybox/fancybox.umd.js"></script>
+    <script></script>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>
