@@ -23,12 +23,50 @@ $(document).ready(function () {
   });
 });
 
-// };
-$(document).ready(function () {
-  $(".training-item-content").click(function () {
-    $(this).parent().toggleClass("active");
-  });
+// jQuery(document).ready(function () {
+//   const tabBtns = $(".training-item");
+//   const tabBannels = $(".training-bottom");
+//   let activeTab = tabBannels;
+//   let activeBannel = tabBtns;
+//   tabBtns.click(function () {
+//     jQuery(".active").removeClass("active");
+//     jQuery(this).addClass("active");
+//     if (activeTab === activeBannel) {
+//       // Thêm class open cho tabBannel tương ứng với tabBtn đang được click
+//       activeBannel = jQuery(this).closest(".training-bottom");
+//       activeBannel.addClass("open");
+
+//       // Xóa class active và open khỏi tabBtn và tabBannel đang được active
+//       if (activeTab) {
+//         activeBannel.removeClass("open");
+//       }
+//     }
+//   });
+// });
+
+let tabLinks = document.querySelectorAll(".training-item");
+let tabContent = document.querySelectorAll(".training-bottom");
+
+tabLinks.forEach(function (el) {
+  el.addEventListener("click", openTabs);
 });
+
+function openTabs(el) {
+  let btn = el.currentTarget; // lắng nghe sự kiện và hiển thị các element
+  let electronic = btn.dataset.electronic; // lấy giá trị trong data-electronic
+  console.log("electronic: ", electronic);
+
+  tabContent.forEach(function (el) {
+    el.classList.remove("open");
+  });
+  tabLinks.forEach(function (el) {
+    el.classList.remove("active");
+  });
+
+  btn.classList.add("active");
+  document.querySelector("#" + electronic).classList.add("open");
+}
+
 const banner = document.querySelector(".banner");
 
 if (banner) {
@@ -36,10 +74,10 @@ if (banner) {
     // Optional parameters
     // loop: true,
     // effect: "fade",
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     // If we need pagination
     pagination: {
       el: banner.querySelector(".swiper-pagination"),
@@ -50,7 +88,6 @@ if (banner) {
     const boxItemsActive = document.querySelectorAll(".box-item.active");
     // const boxCircle = document.getElementById("box");
     const swiperSlides = document.querySelectorAll(".swiper .swiper-slide");
-    console.log("boxItems: ", boxItems);
 
     // Loại bỏ lớp active khỏi tất cả các phần tử box-item
     boxItems.forEach((item) => {
@@ -61,11 +98,6 @@ if (banner) {
     boxItems[this.activeIndex].classList.add("active");
     let rotate = (360 / swiperSlides.length) * e.realIndex + -90;
 
-    // if (e.realIndex == 0) {
-    //   document.getElementById("box").style = `transform: rotate(0deg) `;
-    // } else {
-    //   document.getElementById("box").style = `transform: rotate(${rotate}deg)`;
-    // }
     if (e.realIndex == 0) {
       document.getElementById("box").style = `transform: rotate(0deg) `;
     } else if (e.realIndex == 1) {
@@ -73,16 +105,26 @@ if (banner) {
     } else {
       document.getElementById("box").style = `transform: rotate(227.5deg)`;
     }
-    // let rotate = (360 / swiperSlides.length) * e.realIndex * -1 + -90;
-    // console.log("rotate: ", rotate);
-    // console.log("swiperSlides.length: ", swiperSlides.length);
-
-    // document.getElementById("box").style.transform.rotate = `(${rotate}deg)`;
   });
 }
 
 const feeling = document.querySelector(".feeling");
 if (feeling) {
+  let swiperLeft = new Swiper(feeling.querySelector(".mySwiperLeft"), {
+    // Optional parameters
+
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
   let swiper = new Swiper(feeling.querySelector(".mySwiper"), {
     // Optional parameters
     direction: "vertical",
@@ -93,15 +135,6 @@ if (feeling) {
       delay: 5000,
       disableOnInteraction: false,
     },
-
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev",
-    // },
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
   });
 }
 
@@ -113,10 +146,7 @@ if (mdaEvent) {
     slidesPerView: 3,
     spaceBetween: 30,
     mousewheel: true,
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -129,9 +159,67 @@ if (mdaEvent) {
         slidesPerView: 1,
       },
     },
+  });
+}
+const guest = document.querySelector(".guest");
+if (guest) {
+  let swiper = new Swiper(guest.querySelector(".mySwiperGuest"), {
+    slidesPerView: 7,
+    // spaceBetween: 60,
+
+    grid: {
+      rows: 2,
+    },
+    // spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+
+const slider = document.querySelector(".slider");
+if (slider) {
+  let swiper = new Swiper(slider.querySelector(".swiper"), {
+    slidesPerView: 1.3,
+    // Optional parameters
+    // direction: 'vertical',
+    // loop: true,
+
+    // If we need pagination
     // pagination: {
     //   el: ".swiper-pagination",
-    //   clickable: true,
+    // },
+
+    // Navigation arrows
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
     // },
   });
 }
+
+Fancybox.bind("[data-fancybox]", {
+  infinite: false,
+  keyboard: {
+    Escape: "close",
+    Delete: "close",
+    Backspace: "close",
+    PageUp: "next",
+    PageDown: "prev",
+    ArrowUp: "next",
+    ArrowDown: "prev",
+    ArrowLeft: "prev",
+    ArrowRight: "next",
+  },
+  on: {
+    ready: function (fancybox) {
+      console.log(`fancybox ${fancybox.id} is ready`);
+    },
+  },
+});

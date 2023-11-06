@@ -51,7 +51,6 @@
           .training-item-content {
             .training-icon {
               img {
-                transition: all 0.5s;
                 filter: brightness(0) saturate(100%) invert(60%) sepia(13%)
                   saturate(0%) hue-rotate(259deg) brightness(92%) contrast(90%);
               }
@@ -114,167 +113,168 @@
         }
       }
     }
-    .training-bottom {
-      --col-gap: 4.8rem;
-      --row-gap: 0.8rem;
-      padding: 5.6rem 6.5rem 6.9rem 7.8rem;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .tab-content {
+      overflow: hidden;
       border-radius: 2.4rem;
-      .training-bottom-item {
-        padding: 0 calc(var(--col-gap) / 0.5);
-      }
-      .training-left {
-        .training-left-header {
-          .left-title {
-            font-weight: 700;
-            font-size: 2.4rem;
-            color: $color-second;
-          }
-        }
-        .sub-left-title {
-          margin: 1.5rem 0 1.6rem;
-          font-size: 1.6rem;
-          font-weight: 400;
-          color: $color-text;
-        }
-        .training-left-details {
-          .details-left-item {
-            display: flex;
-            align-items: center;
-            gap: 1.2rem;
-            .details-text {
-              font-size: 1.6rem;
-              font-weight: 700;
-              color: $color-text;
-            }
-            .details-item-icon {
-              width: 1.6rem;
-              height: 1.6rem;
-              background-color: $color-pri;
-              color: white;
-              border-radius: 50%;
-              .fa-check {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0.2rem;
-                font-size: 1.2rem;
-              }
-            }
-          }
-        }
-        .training-left-btn {
-          margin-top: 2.4rem;
-          display: flex;
-          gap: 1.3rem;
-          align-items: center;
-          .training-signUp {
-            border: 1px solid transparent;
-            background: rgba(0, 84, 198, 1);
-            background: -webkit-linear-gradient(
-              to left,
-              rgba(0, 84, 198, 1),
-              rgba(0, 131, 222, 1)
-            );
-            background: linear-gradient(
-              to left,
-              rgba(0, 84, 198, 1),
-              rgba(0, 131, 222, 1)
-            );
-            border-radius: 10rem;
-            position: relative;
-            overflow: hidden;
-            &:hover {
-              border: 1px solid $color-pri;
-              &::after {
-                width: 100%;
-                left: 0%;
-              }
-              .training-btnSignUp {
-                color: $color-pri;
-              }
-            }
-            &::after {
-              position: absolute;
-              content: "";
-              width: 0;
-              height: 100%;
-              top: 0;
-              right: 0;
-              background: white;
-              transition: all 0.5s;
-              z-index: 1;
-            }
-            .training-btnSignUp {
-              padding: 1.2rem 2.4rem;
-              color: white;
-              position: relative;
-              z-index: 2;
-            }
-          }
-          .training-course {
-            background-color: white;
-            border: 1px solid $color-pri;
-            border-radius: 10rem;
-            overflow: hidden;
-            position: relative;
-            &::after {
-              position: absolute;
-              content: "";
-              width: 0;
-              height: 100%;
-              top: 0;
-              right: 0;
-              background: rgba(0, 84, 198, 1);
-              background: -webkit-linear-gradient(
-                to left,
-                rgba(0, 84, 198, 1),
-                rgba(0, 131, 222, 1)
-              );
-              background: linear-gradient(
-                to left,
-                rgba(0, 84, 198, 1),
-                rgba(0, 131, 222, 1)
-              );
-              transition: all 0.5s;
-              z-index: 1;
-            }
-            &:hover {
-              border: 1px solid transparent;
-              &::after {
-                width: 100%;
-                left: 0%;
-              }
-              .training-btnCourse {
-                color: white;
-              }
-            }
-            .training-btnCourse {
-              padding: 1.2rem 2.4rem;
-              color: $color-pri;
-              position: relative;
-              z-index: 2;
-            }
-          }
-        }
-      }
-      .training-right {
-        position: relative;
 
-        .backround-small {
-          position: absolute;
-          top: 16%;
-          left: -7%;
-        }
-        .backround-small2 {
-          background-color: rgba(255, 255, 255, 1);
-          border-radius: 1.6rem;
-          position: absolute;
-          top: 37%;
-          left: -2%;
-          .img-secondary2 {
-            padding: 1.3rem 1.5rem 0.8rem 1.6rem;
+      .training-bottom {
+        padding: 5.6rem 7.8rem;
+        background-color: #fff;
+        box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.06);
+        display: none;
+        opacity: 0;
+        transition: all 0.5s;
+        transform: translateY(100%);
+
+        .training-bottom-tab {
+          .tab-item {
+            padding: calc(var(--col-gap) / 2);
           }
+          .tab-left {
+            .tab-content {
+              display: flex;
+              flex-direction: column;
+              gap: 1.6rem;
+              .tab-left-header {
+                .tab-title {
+                  font-size: 2.4rem;
+                  font-weight: 700;
+                  color: $color-second;
+                }
+              }
+              .sub-left-title {
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: $color-text;
+              }
+              .tab-left-details {
+                .details-item {
+                  display: flex;
+                  align-items: center;
+                  gap: 1.2rem;
+                  .details-text {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: $color-text;
+                  }
+                  .details-item-icon {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    background-color: $color-pri;
+                    color: white;
+                    border-radius: 50%;
+                    .fa-check {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      padding: 0.2rem;
+                      font-size: 1.2rem;
+                    }
+                  }
+                }
+              }
+              .tab-left-btn {
+                margin-top: 2.4rem;
+                display: flex;
+                gap: 1.3rem;
+                align-items: center;
+                .tab-signUp {
+                  border: 1px solid transparent;
+                  background: rgba(0, 84, 198, 1);
+                  background: -webkit-linear-gradient(
+                    to left,
+                    rgba(0, 84, 198, 1),
+                    rgba(0, 131, 222, 1)
+                  );
+                  background: linear-gradient(
+                    to left,
+                    rgba(0, 84, 198, 1),
+                    rgba(0, 131, 222, 1)
+                  );
+                  border-radius: 10rem;
+                  position: relative;
+                  overflow: hidden;
+                  &:hover {
+                    border: 1px solid $color-pri;
+                    &::after {
+                      width: 100%;
+                      left: 0%;
+                    }
+                    .tab-btnSignUp {
+                      color: $color-pri;
+                    }
+                  }
+                  &::after {
+                    position: absolute;
+                    content: "";
+                    width: 0;
+                    height: 100%;
+                    top: 0;
+                    right: 0;
+                    background: white;
+                    transition: all 0.5s;
+                    z-index: 1;
+                  }
+                  .tab-btnSignUp {
+                    padding: 1.2rem 2.4rem;
+                    color: white;
+                    position: relative;
+                    z-index: 2;
+                  }
+                }
+                .tab-course {
+                  background-color: white;
+                  border: 1px solid $color-pri;
+                  border-radius: 10rem;
+                  overflow: hidden;
+                  position: relative;
+                  &::after {
+                    position: absolute;
+                    content: "";
+                    width: 0;
+                    height: 100%;
+                    top: 0;
+                    right: 0;
+                    background: rgba(0, 84, 198, 1);
+                    background: -webkit-linear-gradient(
+                      to left,
+                      rgba(0, 84, 198, 1),
+                      rgba(0, 131, 222, 1)
+                    );
+                    background: linear-gradient(
+                      to left,
+                      rgba(0, 84, 198, 1),
+                      rgba(0, 131, 222, 1)
+                    );
+                    transition: all 0.5s;
+                    z-index: 1;
+                  }
+                  &:hover {
+                    border: 1px solid transparent;
+                    &::after {
+                      width: 100%;
+                      left: 0%;
+                    }
+                    .tab-btnCourse {
+                      color: white;
+                    }
+                  }
+                  .tab-btnCourse {
+                    padding: 1.2rem 2.4rem;
+                    color: $color-pri;
+                    position: relative;
+                    z-index: 2;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &.open {
+          display: block;
+          opacity: 1;
+          transform: translateY(0%);
         }
       }
     }

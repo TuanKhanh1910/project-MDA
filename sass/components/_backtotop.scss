@@ -1,0 +1,39 @@
+.backToTop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+
+  /* cách để ẩn nút back to top */
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.5s;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10rem;
+  border: 2px solid #1976d2;
+  transform: translateX(150%);
+  &:hover {
+    background-color: #1976d2;
+    border: 2px solid transparent;
+    .fa-angle-up {
+      color: white;
+    }
+  }
+  .fa-angle-up {
+    color: #1976d2;
+    font-size: 1.5rem;
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 50%;
+    transition: all 0.5s;
+  }
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(30%);
+}
