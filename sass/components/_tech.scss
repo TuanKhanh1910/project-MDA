@@ -13,59 +13,80 @@
   );
   position: relative;
   .tech-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 6.4rem;
-
+    margin-bottom: 4rem;
     .header-left {
-      padding: 0 calc(var(--col-gap) / 2);
       .tech-title {
         font-weight: 700;
-        color: rgba(255, 255, 255, 1);
         font-size: 4rem;
+        color: rgba(255, 255, 255, 1);
       }
     }
     .header-right {
-      padding: 0 calc(var(--col-gap) / 0.5);
+      width: 61rem;
+      max-width: 100%;
       .tech-sub-title {
-        font-size: 1.6rem;
         font-weight: 400;
+        font-size: 1.6rem;
         color: rgba(255, 255, 255, 1);
+
       }
     }
+    
   }
   .tech-bottom {
     position: relative;
     z-index: 2;
     .tech-content {
-      --col-gap: 10rem;
-      .col-tech {
-        width: calc((12 / 5) / 12 * 100%);
-      }
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.4rem 10rem;
+      align-items: center;
+      justify-content: center;
       .tech-item {
-        padding: 0 calc(var(--col-gap) / 2);
+        width: calc(20% - 8rem);
         .item-img {
-          background-color: rgba(255, 255, 255, 0.8);
+          // background-color: rgba(255, 255, 255, 0.8);
+          // border-radius: 0.8rem;
+          // margin-bottom: 1.6rem;
+          display: block;
+          padding-top: calc((120 / 160) * 100%);
+          position: relative;
+          overflow: hidden;
           border-radius: 0.8rem;
-          margin-bottom: 1.6rem;
+          margin-bottom: 0.8rem;
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
 
-          .BI {
-            padding: 2.5rem 1.756rem 2.5rem 1.8rem;
-          }
-          .sql {
-            padding: 2rem 4rem;
-          }
-          .altery {
-            padding: 4.4rem 2.7rem 4.4rem 2.7rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .qlik {
-            padding: 4.4rem 2.577rem 4.4rem 2.5rem;
-          }
-          .tableau {
-            padding: 2.3rem 1.35rem 2.2rem 1.3rem;
-          }
+          // .BI {
+          //   padding: 2.5rem 1.756rem 2.5rem 1.8rem;
+          // }
+          // .sql {
+          //   padding: 2rem 4rem;
+          // }
+          // .altery {
+          //   padding: 4.4rem 2.7rem 4.4rem 2.7rem;
+          //   display: flex;
+          //   justify-content: center;
+          //   align-items: center;
+          // }
+          // .qlik {
+          //   padding: 4.4rem 2.577rem 4.4rem 2.5rem;
+          // }
+          // .tableau {
+          //   padding: 2.3rem 1.35rem 2.2rem 1.3rem;
+          // }
         }
         .item-text {
           text-align: center;

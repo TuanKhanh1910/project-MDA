@@ -13,6 +13,26 @@
           color: $color-pri;
         }
       }
+      .training-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        border-radius: 0.4rem;
+        background-color: #1976D2;
+        color: white;
+        cursor: pointer;
+        padding: 1rem;
+        .fa-angle-right {
+          transition: all .5s;
+        }
+        &.active {
+          .fa-angle-right {
+              transform: rotate(90deg);
+            }
+        }
+
+      }
       .training-details {
         --col-gap: 4.8rem;
         --row-gap: 0.8rem;
@@ -33,6 +53,9 @@
                 transition: all 0.5s;
               }
               .training-circle {
+                &::before {
+                  background-color: $color-pri;
+                }
                 .fa-circle {
                   color: $color-pri;
                   font-weight: 700;
@@ -113,7 +136,8 @@
         }
       }
     }
-    .tab-content {
+    
+    .training-tap {
       overflow: hidden;
       border-radius: 2.4rem;
 
