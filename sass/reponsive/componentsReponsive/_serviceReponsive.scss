@@ -1,65 +1,71 @@
-@media screen and (max-width: 1100px) {
-  .service {
-    background: url("../../assets/image/service_bg.png") center center fixed;
-    background-size: cover;
-    padding: 10rem 5rem;
-    border-radius: 2.4rem;
-    margin: 10rem 0;
-    .service-content {
-      .service-bg {
-        display: none;
-      }
-      .service-details {
-        padding: 0 5rem;
+// @media screen and (max-width: 1100px) {
+//   .service {
+//     background: url("../../assets/image/service_bg.png") center center fixed;
+//     background-size: cover;
+//     padding: 10rem 5rem;
+//     border-radius: 2.4rem;
+//     margin: 10rem 0;
+//     .service-content {
+//       .service-bg {
+//         display: none;
+//       }
+//       .service-details {
+//         padding: 0 5rem;
 
-        .col-6 {
-          width: calc(12 / 12 * 100%);
-        }
-        .service-item {
-          margin-bottom: var(--row-gap);
-        }
-        .service-left {
-          // transform: translate(0%, -125%);
-          .service-left-header {
-            .service-title {
-              // color: $color-pri;
-            }
-          }
-          .service-sub-title {
-            // color: $color-pri;
-          }
-        }
-        .service-right {
-        }
-      }
-    }
-  }
-}
+//         .col-6 {
+//           width: calc(12 / 12 * 100%);
+//         }
+//         .service-item {
+//           margin-bottom: var(--row-gap);
+//         }
+//         .service-left {
+//           // transform: translate(0%, -125%);
+//           .service-left-header {
+//             .service-title {
+//               // color: $color-pri;
+//             }
+//           }
+//           .service-sub-title {
+//             // color: $color-pri;
+//           }
+//         }
+//         .service-right {
+//         }
+//       }
+//     }
+//   }
+// }
 .service {
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 1000px) {
     .service-content {
-      height: auto;
+      padding: 2.4rem;
     }
   }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width:700px) {
     .service-content {
       .service-details {
+        .service-left,.service-right {
+          width: 100%;
+        }
         .service-left {
           .service-sub-title {
             font-size: 1.4rem;
           }
         }
-        .service-item {
-          margin-bottom: calc(var(--row-gap) * 3);
-        }
       }
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 499.9px) {
     .service-content {
       .service-details {
-        padding: 0;
+        .service-left {
+          .service-sub-title {
+            font-size: 1.2rem;
+          }
+        }
+        
       }
     }
   }
+  
 }

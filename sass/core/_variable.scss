@@ -8,7 +8,12 @@
   --size-hd: 9rem;
   --pd-sc: 8rem;
   --sl: 3;
+  @media screen and (max-width:767px) {
+    --size-hd: 6rem
+  }
 }
+
+
 
 // dit me m nho chua
 $color-pri: rgba(25, 118, 210, 1);

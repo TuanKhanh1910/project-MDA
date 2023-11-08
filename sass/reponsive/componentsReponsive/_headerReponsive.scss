@@ -8,18 +8,18 @@
             display: none;
           }
         }
-        .header__burger {
-          display: block;
-        }
+       
         .header__right {
-          // display: none;
-        }
-        .header__mobile {
+           .header__burger {
           display: block;
-          .mobile__contact {
-            display: none;
-          }
         }
+        }
+      }
+    }
+    .header__mobile {
+      display: block;
+      .mobile__contact {
+        display: none;
       }
     }
   }
@@ -42,11 +42,10 @@
         padding: 0.2rem;
         display: flex;
         justify-content: space-between;
-        .header__burger {
-          margin-left: auto;
-        }
         .header__right {
-          display: none;
+          .header__item {
+            display: none;
+          }
         }
         .header__mobile {
           .mobile__con {

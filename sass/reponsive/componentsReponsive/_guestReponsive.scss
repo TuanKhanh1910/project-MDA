@@ -12,6 +12,13 @@
       }
     }
   }
+  @media screen and (max-width: 991.9px) {
+    .guest__bottom {
+      .mySwiperGuest {
+        height: 17.4rem;
+      }
+    }
+  }
   @media screen and (max-width: 800px) {
     .guest-content {
       .cols {

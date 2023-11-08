@@ -1,106 +1,48 @@
 .banner {
-  @media screen and (min-width: 992px) and (max-width: 1200px) {
-    .swiper {
-      // .box {
-      //   &-left {
-      //     top: 4.3%;
-      //     left: 23%;
-      //   }
-      //   &-right {
-      //     top: 4.3%;
-      //     right: 23%;
-      //   }
-      // }
-    }
-  }
-  @media screen and (min-width: 825px) and (max-width: 991.9px) {
+  @media screen and (max-width:852.9px) {
     .swiper {
       .swiper-wrapper {
-        .swiper-slide {
+        .banner-wrap {
           .banner__content {
+            padding: 9rem 0 0 0;
             .banner__header {
               font-size: 4rem;
             }
             .sub__title {
+              max-width: 55.5rem;
               font-size: 1.4rem;
-              margin: 1rem 0;
-              width: 60%;
+            }
+            .btn_signUp {
+              margin-top: 0.4rem;
+              .btn__text {
+                padding: 0.5rem 1rem;
+              }
             }
           }
         }
       }
-      .box {
-        display: none;
-      }
-      .banner_arrow {
+      .banner-circle {
         display: none;
       }
     }
   }
-  @media screen and (min-width: 650px) and (max-width: 824.9px) {
+  @media screen and (max-width:516px) {
     .swiper {
       .swiper-wrapper {
-        .swiper-slide {
+        .banner-wrap {
           .banner__content {
             .banner__header {
-              font-size: 4rem;
+              font-size: 2.5rem;
             }
             .sub__title {
-              font-size: 1.4rem;
-              margin: 1rem 0;
-              width: 60%;
+              font-size: 1.3rem;
             }
+            
           }
         }
       }
-      .box {
-        display: none;
-      }
-      .banner_arrow {
-        display: none;
-      }
+      
     }
-  }
-  @media screen and (max-width: 649.9px) {
-    .swiper {
-      .swiper-wrapper {
-        .swiper-slide {
-          .banner__content {
-            padding-top: 6rem;
-            .banner__header {
-              font-size: 4rem;
-            }
-            .sub__title {
-              font-size: 1.2rem;
-              margin: 0.5rem 0;
-              width: 100%;
-            }
-          }
-        }
-      }
-      .box {
-        display: none;
-      }
-      .banner_arrow {
-        display: none;
-      }
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .banner__content {
-      padding-top: 6rem;
-      .banner__header {
-        font-size: 2.5rem;
-      }
-      .sub__title {
-        display: none;
-      }
-      .btn_signUp {
-        .btn__text {
-          font-size: 1.2rem;
-          padding: 1rem 2rem;
-        }
-      }
-    }
+    
   }
 }

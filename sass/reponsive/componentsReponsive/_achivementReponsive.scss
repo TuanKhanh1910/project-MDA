@@ -40,16 +40,19 @@
     .container {
       .card__bottom {
         .col-3 {
-          width: calc(12 / 12 * 100%);
+          // width: calc(12 / 12 * 100%);
         }
         .ach__item {
-          margin-bottom: calc(var(--row-gap) * 5);
-          padding: 0 calc(var(--col-gap) / 0.5);
+          margin-bottom: calc(var(--row-gap) * 3);
+          padding: 0 calc(var(--col-gap) / 2);
+          .ach-details {
+            padding: 1rem 1.5rem;
+          }
         }
       }
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 499.9px) {
     .container {
       .card__body {
         .ach-title {
@@ -57,6 +60,9 @@
         }
       }
       .card__bottom {
+        .col-3 {
+          width: calc(12 / 12 * 100%);
+        }
         .ach__item {
           .ach-details {
             .item__right {

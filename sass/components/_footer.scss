@@ -3,12 +3,10 @@
 
   .container {
     .footer__content {
-      padding: 8rem 6.4rem 7.4rem;
+      padding: 4rem 0;
       display: flex;
-      --col-gap: 12.6rem;
-      --row-gap: 0.8rem;
       .footer__item {
-        padding: 0 calc(var(--col-gap) / 5);
+        padding: 0 calc(var(--col-gap) / 2);
         .footer__item__content {
           display: flex;
           flex-direction: column;
@@ -199,6 +197,9 @@
             }
           }
         }
+        &:nth-of-type(4) {
+          margin-left: auto;
+        }
       }
 
       .col-4 {
@@ -210,7 +211,7 @@
     }
   }
   .footer__copy-right {
-    padding: 5.4rem;
+    padding: 2.4rem 0;
     border-top: 1px solid $color-gray;
     text-align: center;
     .copyRight-text {

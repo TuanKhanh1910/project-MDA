@@ -35,5 +35,28 @@
       }
     }
   }
+  @media screen and (max-width: 513.9px) {
+    .tech-header {
+      .header-left {
+        .tech-title {
+          font-size: 2rem;
+        }
+      }
+      .header-right {
+        .tech-sub-title {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .tech-bottom {
+      .tech-content {
+        .tech-item {
+          .item-text {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
   
 }

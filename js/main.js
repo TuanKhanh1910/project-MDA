@@ -134,7 +134,10 @@ if (mdaEvent) {
     slidesPerView: 3,
     spaceBetween: 30,
     mousewheel: true,
-
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -143,7 +146,7 @@ if (mdaEvent) {
       992: {
         slidesPerView: 3,
       },
-      500: {
+      0: {
         slidesPerView: 1,
       },
     },
@@ -166,15 +169,15 @@ if (guest) {
     },
     breakpoints: {
       500: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         grid: {
-          rows: 2,
+          rows: 1,
         },
       },
       700: {
         slidesPerView: 5,
         grid: {
-          rows: 2,
+          rows: 1,
         },
       },
       992: {

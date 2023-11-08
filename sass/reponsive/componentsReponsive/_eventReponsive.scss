@@ -40,4 +40,14 @@
       align-items: start;
     }
   }
+  @media screen and (max-width: 500px) {
+    .event-sub-title {
+      font-size: 1.5rem;
+    }
+    .event-header {
+      .event-title {
+        font-size: 2rem;
+      }
+    }
+  }
 }

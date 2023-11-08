@@ -1,6 +1,5 @@
 .intro {
   @media screen and (max-width: 1043.9px) {
-    .container {
       .intro__content {
         .intro__item {
           .card__header__left {
@@ -9,27 +8,59 @@
             }
           }
         }
-      }
     }
   }
   @media screen and (max-width: 965px) {
-    .container {
+      .intro__content {
+        .intro__item {
+          .card__header__left {
+            .intro__title {
+              font-size: 2.5rem;
+            }
+          }
+        }
+    }
+  }
+  @media screen and (max-width: 700px) {
       .intro__content {
         .col-6 {
           width: calc(12 / 12 * 100%);
         }
         .intro__item {
-          margin-bottom: calc(var(--row-gap) * 5);
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          padding: calc(var(--col-gap) / 2);
+          margin-bottom: var(--row-gap);
+          padding: 0 4.2rem;
           border-radius: 1.6rem;
+          .card__body__left {
+          .sub__title {
+            font-size: 1.4rem;
+          }
         }
+        }
+        
       }
+    
+  }
+  @media screen and (max-width: 500px) {
+      .intro__content {
+        .intro__item {
+          .card__header__left {
+            .intro__title {
+              font-size: 2rem;
+            }
+          }
+          .card__bottom__right {
+            .intro-signUp,.intro-plus {
+              .btn-sigUp,.btnPlus {
+                padding: 0.5rem 1rem;
+              }
+            }
+          }
+        }
     }
   }
 }
-@media screen and (max-width: 965px) {
+@media screen and (max-width: 700px) {
   .intro {
-    padding: 5rem 0;
+    padding:  2rem 0;
   }
 }

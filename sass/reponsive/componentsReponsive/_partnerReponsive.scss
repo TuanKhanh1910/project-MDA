@@ -19,7 +19,7 @@
           width: calc(12 / 12 * 100%);
         }
         .partner__item {
-          margin-bottom: calc(var(--row-gap) * 10);
+          margin-bottom: var(--row-gap);
           .img {
             .partner__img {
               width: 100%;
@@ -74,5 +74,10 @@
         }
       }
     }
+  }
+}
+@media screen and (max-width: 906px) {
+  .partner {
+    padding: 5rem 0;
   }
 }
