@@ -1,139 +1,73 @@
-.feeling {
-  @media screen and (max-width: 1500px) {
-    .feeling__content {
-      .col-9,
-      .col-3 {
-        width: calc(12 / 12 * 100%);
-      }
-      .item__left {
-        padding: 7.4rem 5.6rem 7.4rem 10rem;
-        margin: 0 auto;
-        .card__body {
-          width: 100%;
-        }
-      }
-      .item__right {
-        .student__arrow {
-          left: 93%;
+.sec-feeling {
+  @media screen and (max-width:1400px) {
+    .feeling {
+      .feeling__content {
+        .item__right {
+          .item-right-inner {
+            padding: 8rem 1.6rem 1.6rem;
+          }
         }
       }
     }
   }
-  @media screen and (max-width: 1225px) {
-    .feeling__content {
-      .item__left {
-        .card-header {
-          .header__title {
-            font-size: 3rem;
-          }
-        }
-        .card__body {
-          .body-content {
-            .body-header {
-              .header-right {
-                .name-company {
-                  .name-text {
-                    font-size: 2rem;
+  @media screen and (max-width:1230px) {
+    .feeling {
+      .feeling__content {
+        .item__left {
+          width: calc((8 / 12) * 100%);
+          .item-left-inner {
+            padding: 4rem 2.4rem 4rem 0;
+            .card__body {
+              
+              .mySwiperLeft {
+                .swiper-wrapper {
+                  .body-content {
+                    padding: 2.4rem;
                   }
+
                 }
               }
             }
           }
         }
-      }
-    }
-  }
-  @media screen and (max-width: 1103px) {
-    .feeling__content {
-      .item__left {
-        .card-header {
-          .header__title {
-            font-size: 2.5rem;
+        .item__right {
+          width: calc(4/12 * 100%);
+          .item-right-inner {
+            padding: 4rem 1.6rem;
+            width: calc(100% + 1.5rem);
           }
         }
       }
     }
+    
   }
-  @media screen and (max-width: 1099.9px) {
-    .feeling__content {
-      .item__right {
-        .right__center {
-          height: 20rem;
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 1040px) {
-    .feeling__content {
-      .item__right {
-        .student__arrow {
-          display: none;
-        }
-        .student__plus {
-          display: block;
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 767px) {
-    .feeling__content {
-      .item__left {
-        padding: 7.4rem 2.6rem;
-        .card__body {
-          .mySwiperLeft {
-            .swiper-wrapper {
-              .body-content {
-                padding: 2.4rem;
+  @media screen and (max-width:860px) {
+    .feeling {
+      padding: 4rem 0;
+      .feeling__content {
+        .item__left {
+          width: calc((12 / 12) * 100%);
+          .item-left-inner {
+            padding: 0 0 2.4rem 0;
+            .card-header {
+              .header__title {
+                font-size: 2.7rem;
               }
             }
           }
         }
-        .card__bottom {
-          display: flex;
-
-          gap: 3rem;
-          .bottom__left {
-            width: auto;
-            gap: 0.6rem;
-            .box {
-              position: static;
-            }
+        .item__right {
+          width: calc(12/12 * 100%);
+          .item-right-inner {
+            padding: 1.6rem;
+            border-radius: 0.8rem;
+            overflow: hidden;
+            width: 100%;
           }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 700px) {
-    .feeling__content {
-      .item__left {
-        .card__body {
-          .body-content {
-            .body-bottom {
-              .sub-text1,
-              .sub-text2 {
-                font-size: 1.2rem;
-              }
+          .right__center {
+            .swiper {
+              height: initial;
             }
-            .arrow-left,
-            .arrow-right {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    .feeling__content {
-      .item__left {
-        padding: 7.4rem 2rem;
-        .card__body {
-          background: transparent;
-          width: auto;
-          border: none;
-
-          .body-content {
           }
         }
       }

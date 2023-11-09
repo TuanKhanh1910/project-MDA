@@ -28,7 +28,7 @@
         }
         .intro__item {
           margin-bottom: var(--row-gap);
-          padding: 0 4.2rem;
+          padding: 0 calc(var(--col-gap) / 2);
           border-radius: 1.6rem;
           .card__body__left {
           .sub__title {

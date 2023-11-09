@@ -324,6 +324,14 @@ textarea {
   appearance: none;
 }
 
+.over {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.over::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   width: 100%;
   max-width: 123rem;
@@ -425,6 +433,25 @@ img {
 }
 .col-1 {
   width: 8.3333333333%;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(25, 118, 210);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(25, 118, 210);
 }
 
 #header__MDA {
@@ -1362,10 +1389,6 @@ img {
 .intro {
   padding: 5rem 0;
 }
-.intro .intro__content {
-  --col-gap: 5.7rem;
-  --row-gap: 2.4rem;
-}
 .intro .intro__content .intro__item {
   padding: 0 calc(var(--col-gap) / 2);
 }
@@ -1531,19 +1554,13 @@ img {
 .partner {
   padding: 7.2rem 0;
   background-color: rgb(248, 249, 250);
+  overflow: hidden;
 }
 .partner .container {
   max-width: 117.8rem;
 }
-.partner .container .partner__content {
-  --col-gap: 5.6rem;
-  --row-gap: 0.8rem;
-}
 .partner .container .partner__content .partner__item {
   padding: 0 calc(var(--col-gap) / 2);
-}
-.partner .container .partner__content .partner__item:last-of-type {
-  margin-top: 2rem;
 }
 .partner .container .partner__content .partner__item .card-header .partner-title {
   font-size: 4rem;
@@ -1699,23 +1716,17 @@ img {
 .achivement {
   padding: 5rem 0;
   text-align: center;
+  overflow: hidden;
 }
 .achivement .container .card__header .sub__title {
   font-size: 2.4rem;
   font-weight: 700;
   color: rgb(64, 64, 64);
 }
-.achivement .container .card__body {
-  margin: 0.8rem 0 4rem;
-}
 .achivement .container .card__body .ach-title {
   font-size: 4rem;
   font-weight: 700;
   color: rgb(25, 118, 210);
-}
-.achivement .container .card__bottom {
-  --col-gap: 2.4rem;
-  --row-gap: 0.8rem;
 }
 .achivement .container .card__bottom .ach__item {
   padding: 0 calc(var(--col-gap) / 2);
@@ -1788,86 +1799,90 @@ img {
   margin-top: auto;
 }
 
-.feeling {
+.sec-feeling .feeling {
+  background: linear-gradient(132.04deg, #0083DE 3.45%, #0054C6 95.46%);
   overflow: hidden;
 }
-.feeling .feeling__content .feeling__item {
-  padding: 0 calc(var(--col-gap) / 2);
+.sec-feeling .feeling .feeling__content {
+  display: flex;
+  flex-wrap: wrap;
 }
-.feeling .feeling__content .item__left {
-  background: rgb(0, 84, 198);
-  background: linear-gradient(to left, rgb(0, 84, 198), rgb(0, 131, 222));
-  padding: 7.4rem 5.6rem 7.4rem 37rem;
-  position: relative;
+.sec-feeling .feeling .feeling__content .item__left {
+  width: 75%;
 }
-.feeling .feeling__content .item__left .card-header .sub__title {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner {
+  padding: 8rem 0;
+  padding-right: 5.6rem;
+}
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card-header .sub__title {
   font-size: 2.4rem;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
-.feeling .feeling__content .item__left .card-header .header__title {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card-header .header__title {
   font-size: 4rem;
   font-weight: 700;
   color: rgb(255, 255, 255);
   margin-top: 0.8rem;
 }
-.feeling .feeling__content .item__left .card__body {
-  background: rgba(255, 255, 255, 0.5);
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
-  border: 1px solid rgba(255, 255, 255, 0.5);
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body {
   border-radius: 2.4rem;
   margin: 3.2rem 0 4rem;
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content {
-  padding: 6rem 10.2rem 6.5rem;
-  position: relative;
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content {
+  padding: 6rem 10rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2.4rem;
+  backdrop-filter: blur(2px);
+  height: 100%;
+  border: 0.1rem solid white;
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content .body-header {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content .body-header {
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  margin-bottom: 3.2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.4rem;
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content .body-header .header-left .img-company {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content .body-header .header-left .img-company {
   width: 6rem;
   height: 6rem;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 50%;
+  border-radius: 100rem;
   background-color: white;
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content .body-header .header-left .img-company .cocacola {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content .body-header .header-left .img-company .cocacola {
   padding: 1.8rem 0.9rem;
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content .body-header .header-right .name-company .name-text {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content .body-header .header-right .name-company .name-text {
   font-size: 2.4rem;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content .body-header .header-right .name-company .raing-company .fa-star {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content .body-header .header-right .name-company .raing-company .fa-star {
   color: rgb(255, 193, 7);
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content .body-bottom .sub-text1 {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content .body-bottom .sub-text1 {
   margin-bottom: 0.8rem;
   font-size: 1.6rem;
   font-weight: 400;
   color: rgb(255, 255, 255);
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content .body-bottom .sub-text1 .text1__bold {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content .body-bottom .sub-text1 .text1__bold {
   font-weight: 700;
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content .body-bottom .sub-text2 {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content .body-bottom .sub-text2 {
   font-size: 1.6rem;
   font-weight: 400;
   color: rgb(255, 255, 255);
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content .arrow__item {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content .arrow__item {
   width: 4rem;
   height: 4rem;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   cursor: pointer;
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content .arrow__item .fa-solid {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content .arrow__item .fa-solid {
   padding: 1.5rem 1.7rem;
   color: rgb(25, 118, 210);
   display: flex;
@@ -1875,18 +1890,18 @@ img {
   justify-items: center;
   transform: translate(-3%, -7%);
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content .arrow-left {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content .arrow-left {
   position: absolute;
   top: 36%;
   left: -2%;
 }
-.feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content .arrow-right {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content .arrow-right {
   position: absolute;
   top: 36%;
   right: -2%;
 }
-.feeling .feeling__content .item__left .card__body .swiper-button-prev,
-.feeling .feeling__content .item__left .card__body .swiper-rtl .swiper-button-next {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-button-prev,
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-rtl .swiper-button-next {
   padding: 1.5rem 1.7rem;
   color: rgb(25, 118, 210);
   width: 4rem;
@@ -1897,20 +1912,20 @@ img {
   opacity: 1;
   transition: all 0.5s;
 }
-.feeling .feeling__content .item__left .card__body .swiper-button-prev:hover,
-.feeling .feeling__content .item__left .card__body .swiper-rtl .swiper-button-next:hover {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-button-prev:hover,
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-rtl .swiper-button-next:hover {
   background-color: rgb(25, 118, 210);
 }
-.feeling .feeling__content .item__left .card__body .swiper-button-prev:hover::after,
-.feeling .feeling__content .item__left .card__body .swiper-rtl .swiper-button-next:hover::after {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-button-prev:hover::after,
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-rtl .swiper-button-next:hover::after {
   color: white;
 }
-.feeling .feeling__content .item__left .card__body .swiper-button-prev::after,
-.feeling .feeling__content .item__left .card__body .swiper-rtl .swiper-button-next::after {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-button-prev::after,
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-rtl .swiper-button-next::after {
   font-size: 1.6rem;
 }
-.feeling .feeling__content .item__left .card__body .swiper-button-next,
-.feeling .feeling__content .item__left .card__body .swiper-rtl .swiper-button-prev {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-button-next,
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-rtl .swiper-button-prev {
   padding: 1.5rem 1.7rem;
   color: rgb(25, 118, 210);
   width: 4rem;
@@ -1920,31 +1935,31 @@ img {
   right: 2%;
   transition: all 0.5s;
 }
-.feeling .feeling__content .item__left .card__body .swiper-button-next:hover,
-.feeling .feeling__content .item__left .card__body .swiper-rtl .swiper-button-prev:hover {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-button-next:hover,
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-rtl .swiper-button-prev:hover {
   background-color: rgb(25, 118, 210);
 }
-.feeling .feeling__content .item__left .card__body .swiper-button-next:hover::after,
-.feeling .feeling__content .item__left .card__body .swiper-rtl .swiper-button-prev:hover::after {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-button-next:hover::after,
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-rtl .swiper-button-prev:hover::after {
   color: white;
 }
-.feeling .feeling__content .item__left .card__body .swiper-button-next::after,
-.feeling .feeling__content .item__left .card__body .swiper-rtl .swiper-button-prev::after {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-button-next::after,
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .swiper-rtl .swiper-button-prev::after {
   font-size: 1.6rem;
 }
-.feeling .feeling__content .item__left .card__bottom {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom {
   gap: 1.6rem;
   flex-wrap: wrap;
   align-items: center;
   display: flex;
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__left {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left {
   display: flex;
   margin-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__left .box {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left .box {
   width: 4rem;
   height: 4rem;
   border-radius: 100rem;
@@ -1952,134 +1967,126 @@ img {
   background-color: rgb(255, 255, 255);
   overflow: hidden;
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__left .box img {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left .box img {
   width: auto;
   height: auto;
   object-fit: cover;
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__left .box .petro,
-.feeling .feeling__content .item__left .card__bottom .bottom__left .box .petro2 {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left .box .petro,
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left .box .petro2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__left .box .coca,
-.feeling .feeling__content .item__left .card__bottom .bottom__left .box .coca2 {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left .box .coca,
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left .box .coca2 {
   padding: 1.286rem 0.724rem;
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__left .box .grab {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left .box .grab {
   transform: translate(0%, 6%);
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__left .box .micro {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left .box .micro {
   transform: translate(1%, 23%);
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__left .box .nature {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left .box .nature {
   transform: translate(13%, 20%);
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__left .box .bat {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left .box .bat {
   transform: translate(3%, 28%);
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__left .box .MB {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left .box .MB {
   transform: translate(12%, 47%);
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__left .box:not(:first-of-type) {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__left .box:not(:first-of-type) {
   margin-left: -1.5rem;
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__right .right-title {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__right .right-title {
   font-size: 2.4rem;
   font-weight: 700;
   color: rgb(254, 192, 32);
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__right .text {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__right .text {
   font-size: 1.6rem;
   font-weight: 400;
   color: rgb(255, 255, 255);
 }
-.feeling .feeling__content .item__left .card__bottom .bottom__right .text .text-bold {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__bottom .bottom__right .text .text-bold {
   font-weight: 700;
 }
-.feeling .feeling__content .item__left .backround-right {
+.sec-feeling .feeling .feeling__content .item__left .item-left-inner .backround-right {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.feeling .feeling__content .item__right {
-  background-color: rgb(13, 71, 161);
-  padding: calc(var(--row-gap) / 0.33) calc(var(--col-gap) / 0.5) 0;
+.sec-feeling .feeling .feeling__content .item__right {
+  width: 25%;
+}
+.sec-feeling .feeling .feeling__content .item__right .item-right-inner {
+  width: calc(100% + (100vw - 120rem) / 2);
+  height: 100%;
+  padding: 8rem 5.6rem 2.4rem 5.6rem;
+  background-color: #0D47A1;
   position: relative;
 }
-.feeling .feeling__content .item__right .right__header {
+.sec-feeling .feeling .feeling__content .item__right .right__header {
   margin-bottom: 3.2rem;
 }
-.feeling .feeling__content .item__right .right__header .right_text {
+.sec-feeling .feeling .feeling__content .item__right .right__header .right_text {
   font-size: 2.4rem;
   font-weight: 700;
   color: rgb(223, 223, 223);
 }
-.feeling .feeling__content .item__right .right__header .right__title {
+.sec-feeling .feeling .feeling__content .item__right .right__header .right__title {
   font-size: 4rem;
   color: rgb(223, 223, 223);
   font-weight: 700;
   margin-top: 0.8rem;
 }
-.feeling .feeling__content .item__right .right__center {
+.sec-feeling .feeling .feeling__content .item__right .right__center .swiper {
   height: 54rem;
 }
-.feeling .feeling__content .item__right .right__center .swiper {
-  height: 100%;
-}
-.feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item {
+.sec-feeling .feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item {
   padding-bottom: 1.6rem;
+  margin-bottom: 1.6rem;
 }
-.feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item:not(:last-of-type) {
+.sec-feeling .feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item:not(:last-of-type) {
   border-bottom: 1px solid rgb(255, 255, 255);
 }
-.feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student_item_header {
+.sec-feeling .feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student_item_header {
   display: flex;
   align-items: center;
   gap: 1.6rem;
   margin-bottom: 1.2rem;
 }
-.feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student_item_header .student__item__left .box-student {
+.sec-feeling .feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student_item_header .student__item__left .box-student {
   width: 5.6rem;
   height: 5.6rem;
   border-radius: 50%;
   border: 1px solid rgb(255, 255, 255);
 }
-.feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student_item_header .student__item__left .box-student .student {
+.sec-feeling .feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student_item_header .student__item__left .box-student .student {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-.feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student_item_header .student__item__right .student__name .student-title {
+.sec-feeling .feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student_item_header .student__item__right .student__name .student-title {
   font-size: 1.6rem;
   font-weight: 700;
   color: rgb(223, 223, 223);
 }
-.feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student_item_header .student__item__right .student__name .student-rating .fa-star {
+.sec-feeling .feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student_item_header .student__item__right .student__name .student-rating .fa-star {
   font-size: 1.4rem;
   color: rgb(255, 193, 7);
 }
-.feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student_item_header .student__item__right .student__name .student_work-position {
+.sec-feeling .feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student_item_header .student__item__right .student__name .student_work-position {
   color: rgb(223, 223, 223);
   font-size: 1.2rem;
   font-weight: 700;
 }
-.feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student__item__bottom {
+.sec-feeling .feeling .feeling__content .item__right .right__center .swiper .swiper-slide .student__item .student__item__bottom {
   font-size: 1.6rem;
   font-weight: 400;
   color: rgb(223, 223, 223);
-}
-.feeling .feeling__content .item__right .student__plus {
-  text-align: center;
-  margin: 3rem 0;
-  cursor: pointer;
-  display: none;
-}
-.feeling .feeling__content .item__right .student__plus .plus-title {
-  color: rgb(223, 223, 223);
-  font-size: 2.4rem;
-  font-weight: 700;
 }
 
 .training {
@@ -2958,7 +2965,7 @@ img {
 }
 @media screen and (max-width: 852.9px) {
   .banner .swiper .swiper-wrapper .banner-wrap .banner__content {
-    padding: 9rem 0 0 0;
+    padding: 8rem 0;
   }
   .banner .swiper .swiper-wrapper .banner-wrap .banner__content .banner__header {
     font-size: 4rem;
@@ -2982,7 +2989,7 @@ img {
     font-size: 2.5rem;
   }
   .banner .swiper .swiper-wrapper .banner-wrap .banner__content .sub__title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -3002,7 +3009,7 @@ img {
   }
   .intro .intro__content .intro__item {
     margin-bottom: var(--row-gap);
-    padding: 0 4.2rem;
+    padding: 0 calc(var(--col-gap) / 2);
     border-radius: 1.6rem;
   }
   .intro .intro__content .intro__item .card__body__left .sub__title {
@@ -3078,8 +3085,8 @@ img {
     width: 50%;
   }
   .achivement .container .card__bottom .ach__item {
-    margin-bottom: calc(var(--row-gap) * 5);
-    padding: 0 calc(var(--col-gap) / 0.5);
+    margin-bottom: var(--row-gap);
+    padding: 0 calc(var(--col-gap) / 2);
   }
   .achivement .container .card__bottom .ach__item .ach-details {
     display: flex;
@@ -3091,11 +3098,11 @@ img {
 }
 @media screen and (max-width: 741.9px) {
   .achivement .container .card__bottom .ach__item {
-    margin-bottom: calc(var(--row-gap) * 3);
+    margin-bottom: var(--row-gap);
     padding: 0 calc(var(--col-gap) / 2);
   }
   .achivement .container .card__bottom .ach__item .ach-details {
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
   }
 }
 @media screen and (max-width: 499.9px) {
@@ -3105,90 +3112,61 @@ img {
   .achivement .container .card__bottom .col-3 {
     width: 100%;
   }
+  .achivement .container .card__bottom .ach__item .ach-details {
+    padding: 2.4rem 3.2rem;
+  }
   .achivement .container .card__bottom .ach__item .ach-details .item__right .right__title {
     font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 1500px) {
-  .feeling .feeling__content .col-9,
-  .feeling .feeling__content .col-3 {
-    width: 100%;
-  }
-  .feeling .feeling__content .item__left {
-    padding: 7.4rem 5.6rem 7.4rem 10rem;
-    margin: 0 auto;
-  }
-  .feeling .feeling__content .item__left .card__body {
-    width: 100%;
-  }
-  .feeling .feeling__content .item__right .student__arrow {
-    left: 93%;
+@media screen and (max-width: 1400px) {
+  .sec-feeling .feeling .feeling__content .item__right .item-right-inner {
+    padding: 8rem 1.6rem 1.6rem;
   }
 }
-@media screen and (max-width: 1225px) {
-  .feeling .feeling__content .item__left .card-header .header__title {
-    font-size: 3rem;
+@media screen and (max-width: 1230px) {
+  .sec-feeling .feeling .feeling__content .item__left {
+    width: 66.6666666667%;
   }
-  .feeling .feeling__content .item__left .card__body .body-content .body-header .header-right .name-company .name-text {
-    font-size: 2rem;
+  .sec-feeling .feeling .feeling__content .item__left .item-left-inner {
+    padding: 4rem 2.4rem 4rem 0;
   }
-}
-@media screen and (max-width: 1103px) {
-  .feeling .feeling__content .item__left .card-header .header__title {
-    font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 1099.9px) {
-  .feeling .feeling__content .item__right .right__center {
-    height: 20rem;
-  }
-}
-@media screen and (max-width: 1040px) {
-  .feeling .feeling__content .item__right .student__arrow {
-    display: none;
-  }
-  .feeling .feeling__content .item__right .student__plus {
-    display: block;
-  }
-}
-@media screen and (max-width: 767px) {
-  .feeling .feeling__content .item__left {
-    padding: 7.4rem 2.6rem;
-  }
-  .feeling .feeling__content .item__left .card__body .mySwiperLeft .swiper-wrapper .body-content {
+  .sec-feeling .feeling .feeling__content .item__left .item-left-inner .card__body .mySwiperLeft .swiper-wrapper .body-content {
     padding: 2.4rem;
   }
-  .feeling .feeling__content .item__left .card__bottom {
-    display: flex;
-    gap: 3rem;
+  .sec-feeling .feeling .feeling__content .item__right {
+    width: 33.3333333333%;
   }
-  .feeling .feeling__content .item__left .card__bottom .bottom__left {
-    width: auto;
-    gap: 0.6rem;
-  }
-  .feeling .feeling__content .item__left .card__bottom .bottom__left .box {
-    position: static;
+  .sec-feeling .feeling .feeling__content .item__right .item-right-inner {
+    padding: 4rem 1.6rem;
+    width: calc(100% + 1.5rem);
   }
 }
-@media screen and (max-width: 700px) {
-  .feeling .feeling__content .item__left .card__body .body-content .body-bottom .sub-text1,
-  .feeling .feeling__content .item__left .card__body .body-content .body-bottom .sub-text2 {
-    font-size: 1.2rem;
+@media screen and (max-width: 860px) {
+  .sec-feeling .feeling {
+    padding: 4rem 0;
   }
-  .feeling .feeling__content .item__left .card__body .body-content .arrow-left,
-  .feeling .feeling__content .item__left .card__body .body-content .arrow-right {
-    display: none;
+  .sec-feeling .feeling .feeling__content .item__left {
+    width: 100%;
   }
-}
-@media screen and (max-width: 400px) {
-  .feeling .feeling__content .item__left {
-    padding: 7.4rem 2rem;
+  .sec-feeling .feeling .feeling__content .item__left .item-left-inner {
+    padding: 0 0 2.4rem 0;
   }
-  .feeling .feeling__content .item__left .card__body {
-    background: transparent;
-    width: auto;
-    border: none;
+  .sec-feeling .feeling .feeling__content .item__left .item-left-inner .card-header .header__title {
+    font-size: 2.7rem;
+  }
+  .sec-feeling .feeling .feeling__content .item__right {
+    width: 100%;
+  }
+  .sec-feeling .feeling .feeling__content .item__right .item-right-inner {
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    width: 100%;
+  }
+  .sec-feeling .feeling .feeling__content .item__right .right__center .swiper {
+    height: initial;
   }
 }
 

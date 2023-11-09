@@ -53,10 +53,9 @@ if (banner) {
     // Optional parameters
     // loop: true,
     // effect: "fade",
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 5000,
+    },
     // If we need pagination
     pagination: {
       el: banner.querySelector(".swiper-pagination"),
@@ -107,18 +106,18 @@ if (feeling) {
   let swiper = new Swiper(feeling.querySelector(".mySwiper"), {
     // Optional parameters
 
-    spaceBetween: 30,
+    spaceBetween: 50,
     mousewheel: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
     },
     breakpoints: {
-      325: {
+      0: {
         slidesPerView: 1,
         direction: "horizontal",
       },
-      1100: {
+      861: {
         direction: "vertical",
         slidesPerView: 3,
       },

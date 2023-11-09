@@ -1,16 +1,12 @@
 .partner {
   padding: 7.2rem 0;
   background-color: rgba(248, 249, 250, 1);
+  overflow: hidden;
   .container {
     max-width: 117.8rem;
     .partner__content {
-      --col-gap: 5.6rem;
-      --row-gap: 0.8rem;
       .partner__item {
         padding: 0 calc(var(--col-gap) / 2);
-        &:last-of-type {
-          margin-top: 2rem;
-        }
         .card-header {
           .partner-title {
             font-size: 4rem;
